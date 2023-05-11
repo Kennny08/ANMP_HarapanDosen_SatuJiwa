@@ -1,0 +1,516 @@
+[
+    {
+        "id" : "1",
+        "namaDonasi" : "Donasi Korban Bencana Alam Indonesia",
+        "fotoDonasi" : "donasibencanaalam.jpg",
+        "namaPenggalang" : "Universitas Surabaya (UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "10 Januari 2023",
+        "tanggalTargetPenggalangan" : "5 Mei 2023",
+        "sisaHari" : "30",
+        "targetDonasi" : "150000000",
+        "donasiTerkumpul" : "30000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Ibu pertiwi berduka. Berbagai lokasi di Tanah Air diterpa banyak bencana: mulai banjir, gempa bumi, gunung meletus hingga tanah longsor, dan sebagainya.\nSatuJiwa—UBAYA for Indonesia mengetuk Bapak/Ibu/Saudara/i sahabat SatuJiwa UBAYA untuk membantu dan berkontribusi bagi korban bencana alam di Indonesia.\n\nTautan donasi via sistem satujiwa.ubaya.ac.id:\nhttps://satujiwa.ubaya.ac.id/home/index.php/project_detail/Project~bencanaalam\n\nSilakan Bapak/Ibu/Saudara/i yang ingin menyampaikan bantuan bagi korban bencana alam di Indonesia, dapat disalurkan melalui SatuJiwa-UBAYA for Indonesia selambatnya (tentatif). Kami akan menyampaikan kepada PIC penerima bantuan sesudah tanggal tersebut. Terima kasih.\n\nCatatan: Apabila transfer manual ke No. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya tanpa melalui sistem website satujiwa.ubaya.ac.id mohon mencantumkan tujuan kontribusi untuk korban bencana di Indonesia (tujuan kontribusi untuk korban bencana alam di Indonesia, wajib ada, karena kontribusi lain juga sedang berjalan). Tidak disarankan melalui QR Code karena identitas/tujuan transfer tidak muncul apabila melalui QR Code.\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)\n\n(foto: kompas)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Aminah Darmawati",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Kebutuhan pokok dan perbaikan rumah"
+            },
+            {
+                "namaPenerima" : "Budi Arafan",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Kebutuhan pokok dan perbaikan rumah"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "20 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "25 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "30 Maret 2023"
+            }
+        ]
+
+    },
+
+    {
+        "id" : "2",
+        "namaDonasi" : "Ayo Dukung Kesulitan Ekonomi Mahasiswa dengan Beasiswa Dana Abadi SatuJiwa. Anak Bangsa Jangan Berhenti Studi!",
+        "fotoDonasi" : "beasiswadanaabadisatujiwa.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "21 Januari 2023",
+        "tanggalTargetPenggalangan" : "21 Juli 2023",
+        "sisaHari" : "90",
+        "targetDonasi" : "500000000",
+        "donasiTerkumpul" : "300000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Berbagai kondisi bisa berdampak pada aspek ekonomi. Sebagian keluarga sahabat kita, mahasiswa mengalami krisis keuangan karena goyahnya karir dan usaha keluarga mereka. Mereka tak lagi mampu meng-cover biaya kuliah dan terancam putus kuliah.\n\nAyo, sobat #keluargaUBAYA dan masyarakat, dukung mereka yang terdampak melalui aksi A GIFT FOR A FRIEND dengan cara:\n\n1. Klik 'Kontribusi'\n\n2. Masukkan nominal kontribusi\n\n3. Pilih metode pembayaran\n\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account di satujiwa.ubaya.ac.id\n\nDan... setiap aksi kebaikan yang kalian lakukan, pada akhirnya akan kembali padamu. Salam Satu Jiwa, Satu UBAYA\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Veronika Selfy",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Bayar UPP dan beli buku"
+            },
+            {
+                "namaPenerima" : "Budi Guniwan",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Bayar USP dan beli buku"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "150000000",
+                "tanggalDonasi" : "20 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "75000000",
+                "tanggalDonasi" : "25 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "75000000",
+                "tanggalDonasi" : "30 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "3",
+        "namaDonasi" : "Dana Abadi Bela Rasa Ubaya bagi Anak Bangsa: Tunaikan Janji Kemerdekaan, Ciptakan Rekam Jejak Sejarah Kepedulian Anda di Sini.",
+        "fotoDonasi" : "danaabadibelarasaubayabagianakbangsa.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "05 Januari 2023",
+        "tanggalTargetPenggalangan" : "21 Desember 2023",
+        "sisaHari" : "241",
+        "targetDonasi" : "350000000",
+        "donasiTerkumpul" : "33000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Mahasiswa, alumni, pensiunan, dan masyarakat keluarga UBAYA serta seluruh anak bangsa Indonesia yang membutuhkan perlu uluran kita semua\n\nBerbagai kondisi butuh solusi dan tindakan nyata dari kita semua. Mulai mahasiswa, pensiunan karyawan, alumni UBAYA hingga masyarakat. Ada yang kesulitan membayar biaya kuliah. Ada yang kesulitan berobat. Ada pula yang terhimpit tekanan biaya hidup, dan lain-lain...\n\nKeluarga UBAYA dan masyarakat boleh ikut berkontribusi...Yuk, #keluargaUBAYA, #SatuJiwa kita ringankan beban keluarga UBAYA dan masyarakat melalui bantuan #SatuJiwa dengan cara:\n\n1. Klik 'Kontribusi'\n2. Masukkan nominal kontribusi\n3. Pilih metode pembayaran\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Keluarga Chela Afari",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan berobat"
+            },
+            {
+                "namaPenerima" : "Keluarga Feyi Charisa",
+                "tanggalTerima" : "5 April 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "11000000",
+                "tanggalDonasi" : "20 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "11000000",
+                "tanggalDonasi" : "25 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "11000000",
+                "tanggalDonasi" : "30 Januari 2023"
+            }
+        ]
+    },
+    {
+        "id" : "4",
+        "namaDonasi" : "Bengkulu Dikepung Banjir, Ribuan KK Terendam!",
+        "fotoDonasi" : "donasibanjirbengkulu.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "02 September 2022",
+        "tanggalTargetPenggalangan" : "07 Mei 2023",
+        "sisaHari" : "9",
+        "targetDonasi" : "200000000",
+        "donasiTerkumpul" : "90000000",
+        "jumlahDonatur" : "4",
+        "deskripsiDonasi" : "DARURAT! Banjir Bandang kepung Bengkulu, 5 Kabupaten terendam, puluhan jalan dan sekolah lumpuh, serta ribuan KK terdampak!\n\nHujan deras yang tak berhenti sejak Selasa (30/8) menyebabkan hampir seluruh Kota Bengkulu lumpuh diterpa banjir. Puluhan sekolah yang tersebar di 5 Kabupaten, terendam tak bisa digunakan lagi. Mereka kehilangan tempat bernaung, mereka kehilangan tempat menimba ilmu, mereka kehilangan segalanya...\n\nWilayah yang terendam meliputi wilayah di Kabupaten Seluma, Kabupaten Kaur, Kabupaten Bengkulu Tengah, dan Kabupaten Bengkulu Utara.\n\nSelain itu, Badan Penanggulangan Bencana Daerah (BPBD) Bengkulu, Kristian Hermansyah juga mengungkapkan terdapat dua jembatan rusak, tiga kabupaten juga terdampak tanah longsor dan pohon tumbang.\n\nSetidaknya hingga saat ini warga yang terdampak masih mengungsi di rumah kerabat yang tidak terendam. Beberapa warga bahkan sampai mendirikan tenda-tenda darurat sederhana di tempat-tempat yang lebih tinggi dari tempat tinggalnya.\n\nBeberapa jalan utama yang lumpuh dikepung banjir hingga tidak bisa dilalui, menyebabkan pemerintah setempat kesulitan untuk melakukan evakuasi dan menyalurkan bantuan.\n\nSaudara kita di sana telah kehilangan harta benda mereka. Rumah, pakaian, bahkan lahan pertanian semuanya disapu oleh banjir bandang itu. Hingga kini yang bisa mereka lakukan hanyalah berdoa, berharap kepada Allah agar tidak ada banjir susulan mengingat curah hujan masih sangat tinggi.\n\nSaudara kita di sana masih membutuhkan bantuan dari kita semua. Persediaan mereka untuk bertahan semakin menipis setiap harinya. Mereka hanya bisa menyelamatkan diri tanpa bisa memikirkan harta benda mereka.\n\nSaat ini mereka sangat membutuhkan bantuan kalian berupa makanan cepat saji, pakaian layak, vitamin, obat-obatan dan popok serta perlengkapan bayi.\n\nKeluarga UBAYA dan masyarakat boleh ikut berkontribusi...Yuk, #keluargaUBAYA, #SatuJiwa kita ringankan beban keluarga UBAYA dan masyarakat melalui bantuan #SatuJiwa dengan cara:\n\n1. Klik 'Kontribusi'\n2. Masukkan nominal kontribusi\n3. Pilih metode pembayaran\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Keluarga Bapak Gusta",
+                "tanggalTerima" : "10 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan pakaian dan makanan"
+            },
+            {
+                "namaPenerima" : "Keluarga Sela Afika",
+                "tanggalTerima" : "15 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup"
+            },
+            {
+                "namaPenerima" : "Keluarga Bapak Hardi",
+                "tanggalTerima" : "20 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup dan obat-obatan"
+            },
+            {
+                "namaPenerima" : "Keluarga Ibu Nurfah",
+                "tanggalTerima" : "22 September 2022",
+                "donasiDiterima" : "4000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup dan kebutuhan bayi"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "22500000",
+                "tanggalDonasi" : "04 September 2022"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "17500000",
+                "tanggalDonasi" : "10 September 2022"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "25000000",
+                "tanggalDonasi" : "25 Desember 2022"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "25000000",
+                "tanggalDonasi" : "03 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "5",
+        "namaDonasi" : "1 Day 1 Egg, Sedekah Telur Untuk Penuhi Gizi Anak",
+        "fotoDonasi" : "donasionedayoneegg.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "18 Januari 2023",
+        "tanggalTargetPenggalangan" : "30 November 2023",
+        "sisaHari" : "216",
+        "targetDonasi" : "250000000",
+        "donasiTerkumpul" : "60000000",
+        "jumlahDonatur" : "5",
+        "deskripsiDonasi" : "Hari berganti hari, umur akan terus bertambah dan generasi akan terus berganti. Anak-anak yang kini masih balita, kelak akan menjadi generasi muda yang menjadi penggerak bangsa ini. Nahas, apa daya jika calon generasi muda bangsa ini menderita kekurangan gizi kronis yang lambat laun memengaruhi melambatnya pertumbuhan fisik dan menurunnya perkembangan otak.\n\nMiris mengetahui sekitar 6 juta anak balita di Indonesia yang awalnya mengalami gizi buruk, kini dikategorikan menderita stunting. Artinya, diperkirakan 1 dari 4 balita di Indonesia mengalami kekurangan gizi dalam jangka waktu yang lama (SSGI 2021).\n\nSiapa Kami?\n\nYayasan Edu Farmers International adalah sebuah yayasan non-profit yang memiliki fokus dalam mengembangkan dan menyejahterakan petani, peternak dan generasi muda tergerak mengadakan program pemenuhan nutrisi hewani para balita.\n\n1 Day 1 Egg untuk Cegah Stunting\n\nDengan semangat memperbaiki gizi balita dan menuntaskan stunting di Indonesia, Program Santosa untuk Anak Nusantara (SAN) melalui kampanye “1 Day 1 Egg” memberikan subsidi telur pada balita yang mengalami gizi buruk dan stunting.\n\nSkema subsidi diadakan sebagai upaya untuk mengubah perilaku balita dan orang tua agar terbiasa mengonsumsi dan memberikan nutris protein hewani khususnya telur. \n\nPilot project program SAN telah dilaksanakan sejak September 2022 di 4 lokasi (3 kabupaten, 1 kota, 15 desa) yaitu di Kabupaten Malang, Kabupaten Maros, Kabupaten Tanah Laut dan Kota Cirebon. Selama 3 bulan program berlangsung​, prevalensi stunting menurun sebanyak 17,9%.\n\n#OrangBaik, bayangkan bila program ini bisa meliput lebih banyak lagi daerah di pelosok negeri kita! Karena itulah kami mengajak Anda untuk ikut berkontribusi membangun generasi muda bengsa dengan menjadi orang tua asuh untuk balita yang mengalami gizi buruk dan stunting di Indonesia.\n\nDonasimu akan sangat berarti untuk memenuhi kebutuhan gizi mereka, dan memunculkan senyum kebahagiaan para balita penerus bangsa.\n\nKeluarga UBAYA dan masyarakat boleh ikut berkontribusi...Yuk, #keluargaUBAYA, #SatuJiwa kita ringankan beban keluarga UBAYA dan masyarakat melalui bantuan #SatuJiwa dengan cara:\n\n1. Klik 'Kontribusi'\n2. Masukkan nominal kontribusi\n3. Pilih metode pembayaran\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Yayasan Edu Farmers International",
+                "tanggalTerima" : "03 Maret 2023",
+                "donasiDiterima" : "10000000",
+                "penggunaanDana" : "Pemberian subsidi telur pada balita yang mengalami gizi buruk dan stunting."
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "22 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "25 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "27 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "06 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "12 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "6",
+        "namaDonasi" : "30 Yatim Piatu Terancam Kehilangan Panti Asuhan",
+        "fotoDonasi" : "donasi30yatimpiatuterancamkehilanganpantiasuhan.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "27 Juli 2022",
+        "tanggalTargetPenggalangan" : "14 Mei 2023",
+        "sisaHari" : "16",
+        "targetDonasi" : "180000000",
+        "donasiTerkumpul" : "125000000",
+        "jumlahDonatur" : "5",
+        "deskripsiDonasi" : "Dingin & Kerasnya Lantai Jadi Alas Tidur 30 Yatim Piatu Terancam Terlantar\n“Kak… kalo panti asuhan ini tutup, aku dan teman-temanku mau tinggal dimana? Kita gak punya orangtua dan keluarga,”\n\nSedih dan teriris hati mendengar curahan hati 30 anak Yatim Piatu di Panti Asuhan Berkat Iman Sejahtera. \n\nPanti yang berdiri sejak setahun yang lalu dan menjadi tempat perlindungan bagi anak-anak kurang beruntung, kini terancam tutup.\n\nBiaya sewa rumah yang membengkak tak sejalan dengan donasi serta bantuan yang datanng. \n\nMeskipun 5 pengurus Panti sudah menguras dana pribadi, namun biaya sewa pertahun tetap tak cukup dibayarkan.\n\nKondisi Panti juga memprihatinkan. Anak-anak yang tak bisa merasakan hangatnya kasih sayang orangtua harus berdesakan tidur di lantai tanpa alas dan bantal.\n\nKeras dan dinginnya lantai keramik menusuk tulang, sudah biasa mereka rasakan.\n\nPun untuk makan sehari-hari, anak-anak tak banyak mengeluh. Lauk apapun jadi meskipun lebih sering makan nasi seadanya.\n\nKeinginan mereka untuk bisa punya baju bagus, peralatan sekolah, serta kebutuhan tercukupi terpaksa mereka kubur dalam-dalam.\n\n“Meskipun kehidupan disini sulit, tapi kebersamaan kami tak putus, kami menjadi keluarga bagi satu sama lain. Anak-anak tak pernah berhenti bersyukur, asal Panti tak tutup dan tetap menjadi rumah mereka,”",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Panti Asuhan Berkat Iman Sejahtera",
+                "tanggalTerima" : "12 Maret 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Donasi untuk operasional Panti Asuhan Berkat Iman."
+            },
+            {
+                "namaPenerima" : "Panti Asuhan Berkat Iman Sejahtera",
+                "tanggalTerima" : "12 April 2023",
+                "donasiDiterima" : "50000000",
+                "penggunaanDana" : "Donasi Operasional Panti Asuhan untuk pembelian sembako anak-anak dan perpanjangan kontrak rumah."
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "50000000",
+                "tanggalDonasi" : "30 Juli 2022"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "30000000",
+                "tanggalDonasi" : "05 September 2022"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "06 Desember 2022"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "18000000",
+                "tanggalDonasi" : "12 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Vincentius C. Wariky",
+                "fotoDonatur" : "vincent.jpg",
+                "jumlahDonasi" : "15000000",
+                "tanggalDonasi" : "20 Februari 2023"
+            }
+        ]
+    },
+    {
+        "id" : "7",
+        "namaDonasi" : "URGENT Banjir Kapuas, 16.234 Warga Terdampak",
+        "fotoDonasi" : "donasibanjirkapuas.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "02 April 2023",
+        "tanggalTargetPenggalangan" : "31 Mei 2023",
+        "sisaHari" : "33",
+        "targetDonasi" : "300000000",
+        "donasiTerkumpul" : "150000000",
+        "jumlahDonatur" : "4",
+        "deskripsiDonasi" : "Banjir Landa Kapuas, Kalimantan Tengah. Sedikitnya seiktar 16.234 Jiwa, 5.357 KK, 4.166 Rumah Warga dari 14 Desa Berbeda terendam banjir. Hal ini disebabkan hujan dengan intensitas tinggi yang masih terjadi dan memicu luapan DAS Kapuas.\n\nData per 1 April 2023 pukul 21.00 WIB, dengan tinggi muka air (TMA) mencapai 40 hingga 130 sentimeter. Dalam laporan tertulis dari Panahatan Sinaga selaku Kepala Pelaksana BPBD Kabupaten Kapuas, bahwa banjir di wilayah tersebut telah menyebabkan sedikitnya 39 warga mulai terserang penyakit berupa gatal-gatal.\n\nSelain itu, ada seorang warga yang dirawat di posko kesehatan karena mengalami diare dan muntah-muntah.\n\n\"Korban sakit rata-rata keluhan gatal-gatal kulit sudah mendapatkan tindakan medis oleh Dinkes Kabupaten Kapuas,\" kata Panahatan.\n\nSebagaimana berdasarkan Surat Pernyataan Tanggap Darurat Bencana Banjir bernomor 360/94/BPBD Tahun 2023, yang ditandatangani oleh Bupati Kabupaten Kapuas pada Kamis (30/3), seluruh OPD di lingkungan Pemkab Kapuas terus melakukan upaya penanganan darurat.\n\nTim gabungan dari BPBD Kabupaten Kapuas, Tagana, TNI, Polri, Dinsos, Pemadam Kebakaran, Satpol PP dan Dinkes serta relawan penanggulangan bencana terus melakukan pengecekan dilokasi kejadian. Tim tersebut juga rutin melakukan pemantauan ke rumah-rumah warga\n\nOrang baik, jelang bulan suci Ramadan ini solidaritas kita kembali diuji. Kini saudara kita yang berada di daerah Lahat, Sumatera Selatan membutuhkan bantuan yang sangat mendesak.",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Yayasan Salam Setara Amanah Nusantara",
+                "tanggalTerima" : "07 April 2023",
+                "donasiDiterima" : "33000000",
+                "penggunaanDana" : "Penyaluran bantuan Distribusi Sembako untuk 250 KK terdampak banjir di Kecamatan Mentangai, tanggal penyaluran 9-17 April 2023, lokasi di Kalimantan Tengah."
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "37500000",
+                "tanggalDonasi" : "03 April 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "37500000",
+                "tanggalDonasi" : "05 April 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "37500000",
+                "tanggalDonasi" : "10 April 2023"
+            },
+            {
+                "namaDonatur" : "Vincentius C. Wariky",
+                "fotoDonatur" : "vincent.jpg",
+                "jumlahDonasi" : "37500000",
+                "tanggalDonasi" : "20 April 2023"
+            }
+        ]
+    },
+    {
+        "id" : "8",
+        "namaDonasi" : "Darurat Bantu Warga Terdampak Banjir-Puting Beliung Di Cianjur",
+        "fotoDonasi" : "donasibanjirputingbeliungcianjur.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "20 Maret 2023",
+        "tanggalTargetPenggalangan" : "31 Mei 2023",
+        "sisaHari" : "33",
+        "targetDonasi" : "100000000",
+        "donasiTerkumpul" : "30000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Hujan yang tak kunjung henti disertai angin puting beliung, telah memporak-porandakan puluhan desa di Kabupaten Cianjur, Senin 20 Maret 2023. \n\nBeberapa wilayah yang dilanda banjir yakni Desa Cijedil dan Sukamaju Kecamatan Cugenang, Desa Nagrak dan Limbangansari Kecamatan Cianjur, serta Desa Ciherang Kecamatan Pacet (Detik.com).\n\n\"Ada beberapa wilayah yang dilanda banjir yang terparah di Cijedil Kecamatan Cugenang dan di Cikaret Kecamatan Cianjur. Selain itu ada juga angin puting beliung di Cipanas,\" kata Bupati Cianjur Herman Suherman\n\nSelain itu banjir telah menyapu habis tenda hunian sementara bagi pengungsi terdampak gempa ikut hanyut. \n\nSalah seorang warga, menyebutkan bahwa \"Air tiba-tiba datang dari atas perbukitan, bukan karena sungai meluap. Langsung terjadi banjir bandang dengan ketinggian air sekitar 80 centimeter,\" ucap Cecep \n\nDari hasil pantauan saat ini, tercatat, di Kampung Gunung Lanjung 2, ada 5 tenda yang hanyut, dan di Kampung Gunung Lanjung 1, ada tujuh tenda pengungsian yang hanyut (detik.com). \n\nUntuk data korban sendiri, saat ini masih dalam pemantauan BPBD setempat. Menurut data BPBD Kab Cianjur menyatakan bahwa. \n\n\"Kami masih melakukan pendataan, laporan sementara sekitar 100 rumah di sejumlah desa di Kecamatan Pacet dan Cugenang, terendam banjir setinggi betis orang dewasa, termasuk tenda pengungsian warga tergenang banjir,\" (megapolitan.antaranews.com)\n\nBeberapa warga yang rumahnya  rusak dan terendam banjir dilarikan untuk mengungsi sementara di Masjid dan Madrasah yang aman.  \n\nSahabat Salam Setara, ditengah kondisi tersebut, Saudara kita terdampak sangat membutuhkan bantuan segera di tengah kondisi yang terdesak. Kebutuhan saat ini yang sangat diperlukan bagi warga terdampak banjir, seperti bantuan logistik makanan, obat-obatan, sembako, hygiene kit, pakaian dewasa, air bersih dan selimut,",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Yayasan Salam Setara Amanah Nusantara",
+                "tanggalTerima" : "15 April 2023",
+                "donasiDiterima" : "30000000",
+                "penggunaanDana" : "Penyaluran bantuan Distribusi Sembako untuk warga dan masyarakat yang terkena bencana"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "03 April 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "05 April 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "10000000",
+                "tanggalDonasi" : "10 April 2023"
+            }
+        ]
+    },
+    {
+        "id" : "9",
+        "namaDonasi" : "URGENT! Ribuan Korban Longsor Butuh Bantuanmu",
+        "fotoDonasi" : "donasilongsornatuna.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "07 Maret 2023",
+        "tanggalTargetPenggalangan" : "02 Mei 2023",
+        "sisaHari" : "4",
+        "targetDonasi" : "205000000",
+        "donasiTerkumpul" : "62000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Pada hari yang menyedihkan, bencana alam longsor terjadi di Serasan dan Serasan Timur, Natuna, Kepulauan Riau. Korban bencana ini sangat merugikan masyarakat setempat, dengan total 10 orang meninggal dunia, 47 orang masih dinyatakan hilang, 1 orang mengalami luka berat, 3 orang harus dirawat di rumah sakit, dan 4 orang mengalami kritis. Tidak hanya itu, 27 rumah juga tertimbun dan 1.216 orang terpaksa mengungsi.\n\nSumber data : Diskominfonatuna\n\nSaat ini, para korban bencana longsor membutuhkan kebutuhan mendesak seperti selimut, makanan siap saji, popok, dan susu bayi. Dalam situasi seperti ini, mari kita bersatu dan memberikan bantuan yang diperlukan oleh para korban. Setiap bantuan yang kita berikan akan sangat berarti bagi mereka yang mengalami kesulitan ini.\n\nSelain memberikan bantuan, mari kita juga mendoakan para korban agar diberikan kekuatan dan ketabahan dalam menghadapi cobaan ini. Semoga mereka bisa bangkit dari keterpurukan dan kembali membangun hidup mereka yang baru.\n\nMaka, dengan tulus dan ikhlas, mari kita berdonasi dan mendoakan saudara-saudara kita yang menjadi korban bencana alam longsor di Natuna.",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Penghubung Amanah Donatur Indonesia",
+                "tanggalTerima" : "15 Maret 2023",
+                "donasiDiterima" : "43500000",
+                "penggunaanDana" : "Donasi Implementasi Program"
+            },
+            {
+                "namaPenerima" : "Penghubung Amanah Donatur Indonesia",
+                "tanggalTerima" : "31 Maret 2023",
+                "donasiDiterima" : "7500000",
+                "penggunaanDana" : "Pembelian Sembako Untuk Lokasi Bencana Beras 5 Kg 70 Karung Rp. 4.900.000 Minyak Goreng 1 Liter 50 Pcs Rp. 850.000 Sarden 425 Mili 50 Kaleng Rp. 1.500.000 Snack 25 Pack Rp. 250.000 Admin Bank Rp. 6.500."
+            },
+            {
+                "namaPenerima" : "Penghubung Amanah Donatur Indonesia",
+                "tanggalTerima" : "04 April 2023",
+                "donasiDiterima" : "1500000",
+                "penggunaanDana" : "Dana Pendamping Yayasan"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "45000000",
+                "tanggalDonasi" : "08 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "15000000",
+                "tanggalDonasi" : "10 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "2000000",
+                "tanggalDonasi" : "15 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "10",
+        "namaDonasi" : "Solidaritas Bantu Warga Terdampak Banjir Musi",
+        "fotoDonasi" : "donasibanjirmusi.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "05 Maret 2023",
+        "tanggalTargetPenggalangan" : "31 Mei 2023",
+        "sisaHari" : "33",
+        "targetDonasi" : "220000000",
+        "donasiTerkumpul" : "72000000",
+        "jumlahDonatur" : "3",
+        "deskripsiDonasi" : "Banjir Musi Rawas, Warga Mengungsi Hingga Atap Rumah.\n\nBanjir melanda wilayah Kabupaten Musi Rawas, Provinsi Sumatera Selatan pada Jumat (10/3). Banjir dipicu hujan dengan intensitas tinggi hingga meluapnya Sungai Musi yang berdampak ke pemukiman warga.\n\nPusat Pengendalian Operasi (Pusdalops) BNPB berhasil menghimpun data terkini dari BPBD Kabupaten Musi Rawas per Senin (13/3) pukul 17.30 WIB menyebutkan sebanyak 8.227 jiwa terdampak yang tersebar di tiga kecamatan. Adapun kecamatan terdampak yakni Kecamatan Bts Ulu Cecar, Kecamatan Muara Kelingi dan Kecamatan Sukakarya. Banjir juga mengakibatkan sedikitnya 2.618 unit rumah terdampak, dua jembatan rusak ringan, dua jembatan gantung putus, satu polindes, satu kantor desa, satu sekolah dasar dan tiga tempat ibadah terdampak\n\nSaat ini, korban banjir Sungai Musi di Kabupaten Musi Rawas, Sumatra Selatan, kesulitan mendapatkan pasokan air bersih. Banjir yang menggenangi sejumlah desa dengan ketinggian 1,5-5 meter mengakibatkan sumur-sumur warga tidak dapat berfungsi\n\nWarga saat ini membutuhkan bantuan terkait :\n1. Paket Makana\n2. Selimu\n3. Air Bersih\n4. Hygiene Kit",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Yayasan Salam Setara Amanah Nusantara",
+                "tanggalTerima" : "15 April 2023",
+                "donasiDiterima" : "30000000",
+                "penggunaanDana" : "Penyaluran bantuan Distribusi Sembako untuk warga dan masyrakat yang terdampak banjir"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "35000000",
+                "tanggalDonasi" : "10 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "2000000",
+                "tanggalDonasi" : "05 April 2023"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "35000000",
+                "tanggalDonasi" : "10 April 2023"
+            }
+        ]
+    }
+]
+
+

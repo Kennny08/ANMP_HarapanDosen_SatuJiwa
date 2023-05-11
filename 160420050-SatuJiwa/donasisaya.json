@@ -1,0 +1,184 @@
+[
+    {
+        "id" : "1",
+        "namaDonasi" : "Bengkulu Dikepung Banjir, Ribuan KK Terendam!",
+        "fotoDonasi" : "donasibanjirbengkulu.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "02 September 2022",
+        "tanggalTargetPenggalangan" : "07 Mei 2023",
+        "sisaHari" : "9",
+        "targetDonasi" : "200000000",
+        "donasiTerkumpul" : "90000000",
+        "jumlahDonatur" : "4",
+        "deskripsiDonasi" : "DARURAT! Banjir Bandang kepung Bengkulu, 5 Kabupaten terendam, puluhan jalan dan sekolah lumpuh, serta ribuan KK terdampak!\n\nHujan deras yang tak berhenti sejak Selasa (30/8) menyebabkan hampir seluruh Kota Bengkulu lumpuh diterpa banjir. Puluhan sekolah yang tersebar di 5 Kabupaten, terendam tak bisa digunakan lagi. Mereka kehilangan tempat bernaung, mereka kehilangan tempat menimba ilmu, mereka kehilangan segalanya...\n\nWilayah yang terendam meliputi wilayah di Kabupaten Seluma, Kabupaten Kaur, Kabupaten Bengkulu Tengah, dan Kabupaten Bengkulu Utara.\n\nSelain itu, Badan Penanggulangan Bencana Daerah (BPBD) Bengkulu, Kristian Hermansyah juga mengungkapkan terdapat dua jembatan rusak, tiga kabupaten juga terdampak tanah longsor dan pohon tumbang.\n\nSetidaknya hingga saat ini warga yang terdampak masih mengungsi di rumah kerabat yang tidak terendam. Beberapa warga bahkan sampai mendirikan tenda-tenda darurat sederhana di tempat-tempat yang lebih tinggi dari tempat tinggalnya.\n\nBeberapa jalan utama yang lumpuh dikepung banjir hingga tidak bisa dilalui, menyebabkan pemerintah setempat kesulitan untuk melakukan evakuasi dan menyalurkan bantuan.\n\nSaudara kita di sana telah kehilangan harta benda mereka. Rumah, pakaian, bahkan lahan pertanian semuanya disapu oleh banjir bandang itu. Hingga kini yang bisa mereka lakukan hanyalah berdoa, berharap kepada Allah agar tidak ada banjir susulan mengingat curah hujan masih sangat tinggi.\n\nSaudara kita di sana masih membutuhkan bantuan dari kita semua. Persediaan mereka untuk bertahan semakin menipis setiap harinya. Mereka hanya bisa menyelamatkan diri tanpa bisa memikirkan harta benda mereka.\n\nSaat ini mereka sangat membutuhkan bantuan kalian berupa makanan cepat saji, pakaian layak, vitamin, obat-obatan dan popok serta perlengkapan bayi.\n\nKeluarga UBAYA dan masyarakat boleh ikut berkontribusi...Yuk, #keluargaUBAYA, #SatuJiwa kita ringankan beban keluarga UBAYA dan masyarakat melalui bantuan #SatuJiwa dengan cara:\n\n1. Klik 'Kontribusi'\n2. Masukkan nominal kontribusi\n3. Pilih metode pembayaran\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Keluarga Bapak Gusta",
+                "tanggalTerima" : "10 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan pakaian dan makanan"
+            },
+            {
+                "namaPenerima" : "Keluarga Sela Afika",
+                "tanggalTerima" : "15 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup"
+            },
+            {
+                "namaPenerima" : "Keluarga Bapak Hardi",
+                "tanggalTerima" : "20 September 2022",
+                "donasiDiterima" : "3000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup dan obat-obatan"
+            },
+            {
+                "namaPenerima" : "Keluarga Ibu Nurfah",
+                "tanggalTerima" : "22 September 2022",
+                "donasiDiterima" : "4000000",
+                "penggunaanDana" : "Kebutuhan biaya hidup dan kebutuhan bayi"
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "22500000",
+                "tanggalDonasi" : "04 September 2022"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "17500000",
+                "tanggalDonasi" : "10 September 2022"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "25000000",
+                "tanggalDonasi" : "25 Desember 2022"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "25000000",
+                "tanggalDonasi" : "03 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "2",
+        "namaDonasi" : "1 Day 1 Egg, Sedekah Telur Untuk Penuhi Gizi Anak",
+        "fotoDonasi" : "donasionedayoneegg.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "18 Januari 2023",
+        "tanggalTargetPenggalangan" : "30 November 2023",
+        "sisaHari" : "216",
+        "targetDonasi" : "250000000",
+        "donasiTerkumpul" : "60000000",
+        "jumlahDonatur" : "5",
+        "deskripsiDonasi" : "Hari berganti hari, umur akan terus bertambah dan generasi akan terus berganti. Anak-anak yang kini masih balita, kelak akan menjadi generasi muda yang menjadi penggerak bangsa ini. Nahas, apa daya jika calon generasi muda bangsa ini menderita kekurangan gizi kronis yang lambat laun memengaruhi melambatnya pertumbuhan fisik dan menurunnya perkembangan otak.\n\nMiris mengetahui sekitar 6 juta anak balita di Indonesia yang awalnya mengalami gizi buruk, kini dikategorikan menderita stunting. Artinya, diperkirakan 1 dari 4 balita di Indonesia mengalami kekurangan gizi dalam jangka waktu yang lama (SSGI 2021).\n\nSiapa Kami?\n\nYayasan Edu Farmers International adalah sebuah yayasan non-profit yang memiliki fokus dalam mengembangkan dan menyejahterakan petani, peternak dan generasi muda tergerak mengadakan program pemenuhan nutrisi hewani para balita.\n\n1 Day 1 Egg untuk Cegah Stunting\n\nDengan semangat memperbaiki gizi balita dan menuntaskan stunting di Indonesia, Program Santosa untuk Anak Nusantara (SAN) melalui kampanye “1 Day 1 Egg” memberikan subsidi telur pada balita yang mengalami gizi buruk dan stunting.\n\nSkema subsidi diadakan sebagai upaya untuk mengubah perilaku balita dan orang tua agar terbiasa mengonsumsi dan memberikan nutris protein hewani khususnya telur. \n\nPilot project program SAN telah dilaksanakan sejak September 2022 di 4 lokasi (3 kabupaten, 1 kota, 15 desa) yaitu di Kabupaten Malang, Kabupaten Maros, Kabupaten Tanah Laut dan Kota Cirebon. Selama 3 bulan program berlangsung​, prevalensi stunting menurun sebanyak 17,9%.\n\n#OrangBaik, bayangkan bila program ini bisa meliput lebih banyak lagi daerah di pelosok negeri kita! Karena itulah kami mengajak Anda untuk ikut berkontribusi membangun generasi muda bengsa dengan menjadi orang tua asuh untuk balita yang mengalami gizi buruk dan stunting di Indonesia.\n\nDonasimu akan sangat berarti untuk memenuhi kebutuhan gizi mereka, dan memunculkan senyum kebahagiaan para balita penerus bangsa.\n\nKeluarga UBAYA dan masyarakat boleh ikut berkontribusi...Yuk, #keluargaUBAYA, #SatuJiwa kita ringankan beban keluarga UBAYA dan masyarakat melalui bantuan #SatuJiwa dengan cara:\n\n1. Klik 'Kontribusi'\n2. Masukkan nominal kontribusi\n3. Pilih metode pembayaran\n4. Segera transfer sesuai nominal menggunakan transfer bank & virtual account\n\nNo. Rekening BCA 088 643 2393 Cabang Darmo Surabaya a.n. Yayasan Universitas Surabaya\n\nInformasi lebih lanjut dapat menghubungi nomor WhatsApp chat: 085330123601 (Freddy)",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Yayasan Edu Farmers International",
+                "tanggalTerima" : "03 Maret 2023",
+                "donasiDiterima" : "10000000",
+                "penggunaanDana" : "Pemberian subsidi telur pada balita yang mengalami gizi buruk dan stunting."
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Gede Darma",
+                "fotoDonatur" : "gede.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "22 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "25 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "27 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "06 Maret 2023"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "12 Maret 2023"
+            }
+        ]
+    },
+    {
+        "id" : "3",
+        "namaDonasi" : "30 Yatim Piatu Terancam Kehilangan Panti Asuhan",
+        "fotoDonasi" : "donasi30yatimpiatuterancamkehilanganpantiasuhan.jpg",  
+        "namaPenggalang" : "Universitas Surabaya(UBAYA)",
+        "fotoPenggalang" : "logoubaya.png",
+        "tanggalPenggalanganDana" : "27 Juli 2022",
+        "tanggalTargetPenggalangan" : "14 Mei 2023",
+        "sisaHari" : "16",
+        "targetDonasi" : "180000000",
+        "donasiTerkumpul" : "125000000",
+        "jumlahDonatur" : "5",
+        "deskripsiDonasi" : "Dingin & Kerasnya Lantai Jadi Alas Tidur 30 Yatim Piatu Terancam Terlantar\n“Kak… kalo panti asuhan ini tutup, aku dan teman-temanku mau tinggal dimana? Kita gak punya orangtua dan keluarga,”\n\nSedih dan teriris hati mendengar curahan hati 30 anak Yatim Piatu di Panti Asuhan Berkat Iman Sejahtera. \n\nPanti yang berdiri sejak setahun yang lalu dan menjadi tempat perlindungan bagi anak-anak kurang beruntung, kini terancam tutup.\n\nBiaya sewa rumah yang membengkak tak sejalan dengan donasi serta bantuan yang datanng. \n\nMeskipun 5 pengurus Panti sudah menguras dana pribadi, namun biaya sewa pertahun tetap tak cukup dibayarkan.\n\nKondisi Panti juga memprihatinkan. Anak-anak yang tak bisa merasakan hangatnya kasih sayang orangtua harus berdesakan tidur di lantai tanpa alas dan bantal.\n\nKeras dan dinginnya lantai keramik menusuk tulang, sudah biasa mereka rasakan.\n\nPun untuk makan sehari-hari, anak-anak tak banyak mengeluh. Lauk apapun jadi meskipun lebih sering makan nasi seadanya.\n\nKeinginan mereka untuk bisa punya baju bagus, peralatan sekolah, serta kebutuhan tercukupi terpaksa mereka kubur dalam-dalam.\n\n“Meskipun kehidupan disini sulit, tapi kebersamaan kami tak putus, kami menjadi keluarga bagi satu sama lain. Anak-anak tak pernah berhenti bersyukur, asal Panti tak tutup dan tetap menjadi rumah mereka,”",
+        "penyaluranDana" : [
+            {
+                "namaPenerima" : "Panti Asuhan Berkat Iman Sejahtera",
+                "tanggalTerima" : "12 Maret 2023",
+                "donasiDiterima" : "1000000",
+                "penggunaanDana" : "Donasi untuk operasional Panti Asuhan Berkat Iman."
+            },
+            {
+                "namaPenerima" : "Panti Asuhan Berkat Iman Sejahtera",
+                "tanggalTerima" : "12 April 2023",
+                "donasiDiterima" : "50000000",
+                "penggunaanDana" : "Donasi Operasional Panti Asuhan untuk pembelian sembako anak-anak dan perpanjangan kontrak rumah."
+            }
+        ],
+        "daftarDonatur" : [
+            {
+                "namaDonatur" : "Jonathan Ryan",
+                "fotoDonatur" : "ryan.jpg",
+                "jumlahDonasi" : "50000000",
+                "tanggalDonasi" : "30 Juli 2022"
+            },
+            {
+                "namaDonatur" : "Kenny",
+                "fotoDonatur" : "kenny.jpg",
+                "jumlahDonasi" : "30000000",
+                "tanggalDonasi" : "05 September 2022"
+            },
+            {
+                "namaDonatur" : "Chelsea Tandiana",
+                "fotoDonatur" : "chelsea.jpg",
+                "jumlahDonasi" : "12000000",
+                "tanggalDonasi" : "06 Desember 2022"
+            },
+            {
+                "namaDonatur" : "Dastyn Susanto",
+                "fotoDonatur" : "dastyn.jpg",
+                "jumlahDonasi" : "18000000",
+                "tanggalDonasi" : "12 Februari 2023"
+            },
+            {
+                "namaDonatur" : "Vincentius C. Wariky",
+                "fotoDonatur" : "vincent.jpg",
+                "jumlahDonasi" : "15000000",
+                "tanggalDonasi" : "20 Februari 2023"
+            }
+        ]
+    }
+]
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/ic_baseline_add_card_24.xml" value="0.188" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/rounded_button_search.xml" value="0.187" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/rounded_progressbar.xml" value="0.188" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/rounded_textview.xml" value="0.188" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_aksinyata_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_berita_item.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_donasi_item.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_donasisaya_item.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_donatur_item.xml" value="0.5" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/daftar_penyalurandana_item.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_about_satu_jiwa.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_aksi_nyata.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_berita.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_donasi_saya.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_donatur.xml" value="0.13949275362318841" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_doonasi_saya.xml" value="0.1" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_daftar_galang_dana.xml" value="0.14130434782608695" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_detail_aksi_nyata.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_detail_berita.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_detail_donasi.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_detail_donasi_saya.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_detail_galang_dana.xml" value="0.14130434782608695" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_edit_profile.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/layout/fragment_profile.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/menu/bottom_menu.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

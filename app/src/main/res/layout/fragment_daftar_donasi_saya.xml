@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DaftarDonasiSayaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDaftarDonasiSaya"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoadDaftarDonasiSaya"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintStart_toStartOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintTop_toTopOf="@+id/recyclerViewDaftarDonasiSaya" />
+
+        <TextView
+            android:id="@+id/txtErrorDaftarDonasiSaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error while loading data"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintStart_toStartOf="@+id/recyclerViewDaftarDonasiSaya"
+            app:layout_constraintTop_toTopOf="@+id/recyclerViewDaftarDonasiSaya" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemDonasi">
+
+    <fragment
+        android:id="@+id/itemDonasi"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.HomeFragment"
+        android:label="Daftar Donasi"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actionDetailDonasi"
+            app:destination="@id/detailDonasiFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDonasiSaya"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DaftarDonasiSayaFragment"
+        android:label="Donasi Saya"
+        tools:layout="@layout/fragment_daftar_donasi_saya" >
+        <action
+            android:id="@+id/actionDetailDonasiSaya"
+            app:destination="@id/detailDonasiSayaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/actionProfileAbout"
+            app:destination="@id/aboutSatuJiwaFragment"
+
+            />
+        <action
+            android:id="@+id/actionProfileEditProfile"
+            app:destination="@id/editProfileFragment"
+            />
+        <action
+            android:id="@+id/actionDaftarDonasiSaya"
+            app:destination="@id/itemDonasiSaya" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDonasiFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailDonasiFragment"
+        android:label="Detail Donasi"
+        tools:layout="@layout/fragment_detail_donasi" >
+        <argument
+            android:name="donasiId"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDonasiSayaFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailDonasiSayaFragment"
+        android:label="Detail Donasi Saya"
+        tools:layout="@layout/fragment_detail_donasi_saya" >
+        <argument
+            android:name="donasisayaId"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemBerita"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DaftarBeritaFragment"
+        android:label="Berita Satu Jiwa"
+        tools:layout="@layout/fragment_daftar_berita" >
+        <action
+            android:id="@+id/actionDetailBerita"
+            app:destination="@id/detailBeritaFragment"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBeritaFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailBeritaFragment"
+        android:label="Detail Berita"
+        tools:layout="@layout/fragment_detail_berita">
+        <argument
+            android:name="beritaId"
+            android:defaultValue="0"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutSatuJiwaFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.AboutSatuJiwaFragment"
+        android:label="About Satu Jiwa"
+        tools:layout="@layout/fragment_about_satu_jiwa" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/itemAksiNyata"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DaftarAksiNyataFragment"
+        android:label="Aksi Nyata"
+        tools:layout="@layout/fragment_daftar_aksi_nyata">
+        <action
+            android:id="@+id/actionDetailAksiNyata"
+            app:destination="@id/detailAksiNyataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAksiNyataFragment"
+        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailAksiNyataFragment"
+        android:label="Detail Aksi Nyata"
+        tools:layout="@layout/fragment_detail_aksi_nyata" >
+        <argument
+            android:name="aksiNyataId"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
