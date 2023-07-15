@@ -20,35 +20,12 @@
                 android:id="@+id/recycleViewDonasi"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_textview"
-                android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
-                android:drawablePadding="10dp"
-                android:gravity="center_vertical"
-                android:paddingStart="15dp"
-                android:text="Rp. 120000000"
-                android:textSize="14sp"
-                app:drawableTint="#de0e00"
-                app:flow_verticalAlign="baseline"
-                app:layout_constraintEnd_toStartOf="@+id/btnIsiDompet"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
             <TextView
                 android:id="@+id/txtErrorDaftarDonasi"
@@ -60,22 +37,6 @@
                 app:layout_constraintStart_toStartOf="@+id/recycleViewDonasi"
                 app:layout_constraintTop_toTopOf="@+id/recycleViewDonasi" />
 
-            <Button
-                android:id="@+id/btnIsiDompet"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/rounded_button_search"
-                android:drawableLeft="@drawable/ic_baseline_add_card_24"
-                android:text="Isi "
-                android:textAlignment="gravity"
-                android:textAllCaps="false"
-                android:textSize="16sp"
-                app:iconTint="#FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
             <ProgressBar
                 android:id="@+id/progressBarLoadDaftarDonasi"
                 style="?android:attr/progressBarStyle"
@@ -86,19 +47,7 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="@+id/recycleViewDonasi"
                 app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-                app:layout_constraintVertical_bias="0.685" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="10dp"
-                android:text="Dompet Donasi Anda"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+                app:layout_constraintVertical_bias="0.603" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"

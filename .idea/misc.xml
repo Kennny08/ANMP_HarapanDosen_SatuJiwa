@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_aksinyata_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_berita_item.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_donasi_item.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_donasisaya_item.xml" value="0.14666666666666667" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_donatur_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/daftar_penyalurandana_item.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_about_satu_jiwa.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_daftar_aksi_nyata.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_daftar_berita.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_daftar_donasi_saya.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_detail_aksi_nyata.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_detail_berita.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_detail_donasi.xml" value="0.3333333333333333" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_detail_donasi_saya.xml" value="0.16802536231884058" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UAS/Project/app/src/main/res/layout/fragment_profile.xml" value="0.16802536231884058" />
         <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/ic_baseline_add_card_24.xml" value="0.188" />
         <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/rounded_button_search.xml" value="0.187" />
         <entry key="..\:/Semester-6/Advanced-Native-Mobile-Programming-KP-C/UTS/Project/app/src/main/res/drawable/rounded_progressbar.xml" value="0.188" />

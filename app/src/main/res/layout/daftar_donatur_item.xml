@@ -44,7 +44,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="16dp"
-                android:text="Nama Donatur"
+                android:text="Nama Donasi"
                 android:textColor="#de0e00"
                 android:textSize="15sp"
                 android:textStyle="bold"
