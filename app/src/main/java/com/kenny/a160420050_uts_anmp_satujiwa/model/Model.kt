@@ -7,29 +7,27 @@ import androidx.room.PrimaryKey
 @Entity
 data class Donasi(
     @ColumnInfo(name="namaDonasi")
-    val namaDonasi:String,
+    var namaDonasi:String,
     @ColumnInfo(name="fotoDonasi")
-    val fotoDonasi:String,
+    var fotoDonasi:String,
     @ColumnInfo(name="namaPenggalang")
-    val namaPenggalang:String,
+    var namaPenggalang:String,
     @ColumnInfo(name="fotoPenggalang")
-    val fotoPenggalang:String,
+    var fotoPenggalang:String,
     @ColumnInfo(name="tanggalPenggalangDana")
-    val tanggalPenggalanganDana:String,
+    var tanggalPenggalanganDana:String,
     @ColumnInfo(name="tanggalTargetPenggalangan")
-    val tanggalTargetPenggalangan:String,
-    @ColumnInfo(name="sisaHari")
-    val sisaHari:Int,
+    var tanggalTargetPenggalangan:String,
     @ColumnInfo(name="targetDonasi")
-    val targetDonasi:Double,
+    var targetDonasi:Double,
     @ColumnInfo(name="donasiTerkumpul")
-    val donasiTerkumpul:Double,
+    var donasiTerkumpul:Double,
     @ColumnInfo(name="jumlahDonatur")
-    val jumlahDonatur:Int,
+    var jumlahDonatur:Int,
     @ColumnInfo(name="deskripsiDonasi")
-    val deskripsiDonasi:String,
+    var deskripsiDonasi:String,
     @ColumnInfo(name="status")
-    val status:Int=1
+    var status:Int=1
 ) {
     @PrimaryKey(autoGenerate = true)
     var uuid:Int=0
@@ -38,13 +36,13 @@ data class Donasi(
 @Entity
 data class Donatur(
     @ColumnInfo(name="idDonatur")
-    val idDonatur:Int,
+    var idDonatur:Int,
     @ColumnInfo(name="idDonasi")
-    val idDonasi:Int,
+    var idDonasi:Int,
     @ColumnInfo(name="jumlahDonasi")
-    val jumlahDonasi:Double,
+    var jumlahDonasi:Double,
     @ColumnInfo(name="tanggalDonasi")
-    val tanggalDonasi : String
+    var tanggalDonasi : String
 ){
     @PrimaryKey(autoGenerate = true)
     var uuid:Int=0
@@ -53,15 +51,15 @@ data class Donatur(
 @Entity
 data class Berita(
     @ColumnInfo(name="judulBerita")
-    val judulBerita:String,
+    var judulBerita:String,
     @ColumnInfo(name="namaPenulis")
-    val namaPenulis:String,
+    var namaPenulis:String,
     @ColumnInfo(name="tanggalBerita")
-    val tanggalBerita:String,
+    var tanggalBerita:String,
     @ColumnInfo(name="gambarBerita")
-    val gambarBerita:String,
+    var gambarBerita:String,
     @ColumnInfo(name="isiBerita")
-    val isiBerita:String
+    var isiBerita:String
 ){
     @PrimaryKey(autoGenerate = true)
     var uuid:Int=0
@@ -70,15 +68,15 @@ data class Berita(
 @Entity
 data class User(
     @ColumnInfo(name="name")
-    val judulBerita:String,
+    var name:String,
     @ColumnInfo(name="phoneNumber")
-    val phoneNumber:String,
+    var phoneNumber:String,
     @ColumnInfo(name="address")
-    val address:String,
+    var address:String,
     @ColumnInfo(name="username")
-    val username:String,
+    var username:String,
     @ColumnInfo(name="password")
-    val password:String
+    var password:String
 ){
     @PrimaryKey(autoGenerate = true)
     var uuid:Int=0

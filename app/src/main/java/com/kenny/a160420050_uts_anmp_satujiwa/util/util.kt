@@ -42,7 +42,7 @@ fun ImageView.loadImageDonatur(url:String?, progressBar: ProgressBar){
 val DB_NAME = "satujiwadb"
 
 fun buildDB(context: Context):SatuJiwaDatabase{
-    val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).build()
+    val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).createFromAsset("satujiwadb.db").build()
 
     return db
 }

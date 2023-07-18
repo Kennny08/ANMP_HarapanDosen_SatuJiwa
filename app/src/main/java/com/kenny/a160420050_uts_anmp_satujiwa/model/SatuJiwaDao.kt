@@ -10,7 +10,7 @@ interface DonasiDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(vararg donasi: Donasi)
 
-    @Query("SELECT * from donasi")
+    @Query("SELECT * from donasi where status=1")
     fun selectAllDonasi(): List<Donasi>
 }
 

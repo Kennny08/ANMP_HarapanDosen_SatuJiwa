@@ -18,7 +18,7 @@ abstract class SatuJiwaDatabase: RoomDatabase() {
 
         private fun buildDatabase(context: Context) = Room.databaseBuilder(
             context.applicationContext,
-            SatuJiwaDatabase::class.java, "satujiwadb").build()
+            SatuJiwaDatabase::class.java, "satujiwadb").createFromAsset("satujiwadb.db").build()
 
         operator fun invoke(context: Context){
             if(instance != null){

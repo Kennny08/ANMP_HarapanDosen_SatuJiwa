@@ -76,7 +76,7 @@ class DetailDonasiSayaFragment : Fragment() {
             var donasi = it
             txtDetailNamaDonasiSaya.text = donasi.namaDonasi
             txtDetailProgressDonasiSaya.text = "Rp. " + donasi.donasiTerkumpul
-            txtDetailSisaHariDonasiSaya.text = donasi.sisaHari.toString() + " hari lagi"
+            txtDetailSisaHariDonasiSaya.text = "1 hari lagi"
             var targetDonasi = donasi.targetDonasi.toString().toDouble()
             var progress:Double = (donasi.donasiTerkumpul.toString().toDouble() / targetDonasi) * 100
             progressBarDetailDonasiSaya.setProgress(progress.toInt())
