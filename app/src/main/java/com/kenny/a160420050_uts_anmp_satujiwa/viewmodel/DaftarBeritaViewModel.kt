@@ -12,45 +12,32 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Berita
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
+import com.kenny.a160420050_uts_anmp_satujiwa.util.buildDB
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
 
-class DaftarBeritaViewModel (application: Application) : AndroidViewModel(application){
-    val beritaLD = MutableLiveData<ArrayList<Berita>>()
+class DaftarBeritaViewModel (application: Application) : AndroidViewModel(application), CoroutineScope{
+    val beritaLD = MutableLiveData<List<Berita>>()
     val beritaLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 
-    val TAG = "volleyTag"
-    private var queue: RequestQueue? = null
+    private var job = Job()
 
-    override fun onCleared() {
-        super.onCleared()
-        queue?.cancelAll(TAG)
-    }
+    override val coroutineContext: CoroutineContext
+    get() = job + Dispatchers.IO
 
     fun refresh() {
         beritaLoadErrorLD.value = false
         loadingLD.value = true
 
-        queue = Volley.newRequestQueue(getApplication())
-        val url =  "https://projectfspf.000webhostapp.com/projectutsanmp/berita.json"
+        launch {
+            val db = buildDB(getApplication())
 
-        val stringRequest = StringRequest(
-            Request.Method.GET, url,
-            {
-                val sType = object : TypeToken<List<Berita>>() {}.type
-                val result = Gson().fromJson<List<Berita>>(it, sType)
-                beritaLD.value =
-                    result as ArrayList<Berita> /* = java.util.ArrayList<com.kenny.a160420050_week4.model.Student> */
-
-                loadingLD.value = false
-                Log.d("showvoley", it)
-            },
-            {
-                Log.d("showvoley", it.toString())
-                beritaLoadErrorLD.value = true
-                loadingLD.value = false
-            })
-
-        stringRequest.tag = TAG
-        queue?.add(stringRequest)
+            beritaLD.postValue(db.beritaDao().selectAllBerita())
+        }
+        loadingLD.value = false
     }
 }

@@ -1,6 +1,7 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.view
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -34,11 +35,11 @@ class DaftarBeritaFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(DaftarBeritaViewModel::class.java)
         viewModel.refresh()
-        val recView = view.findViewById<RecyclerView>(R.id.recyclerViewBerita)
 
+        val recView = view.findViewById<RecyclerView>(R.id.recyclerViewBerita)
         recView.layoutManager = LinearLayoutManager(context)
         recView.adapter = daftarBeritaAdapter
-        observeViewModel(view)
+        Log.d("adapterfragment", "masuk")
 
         val swipe = view.findViewById<SwipeRefreshLayout>(R.id.refreshLayoutDaftarBerita)
         swipe.setOnRefreshListener {
@@ -52,15 +53,16 @@ class DaftarBeritaFragment : Fragment() {
             swipe.isRefreshing = false
 
         }
+        observeViewModel(view)
     }
 
     fun observeViewModel(view: View){
-
         val recyclerViewBerita = view.findViewById<RecyclerView>(R.id.recyclerViewBerita)
         val progressBarLoadDaftarBerita = view.findViewById<ProgressBar>(R.id.progressBarLoadDaftarBerita)
         val txtErrorLoadDaftarBerita = view.findViewById<TextView>(R.id.txtErrorLoadDaftarBerita)
 
         viewModel.beritaLD.observe(viewLifecycleOwner, Observer {
+            Log.d("adapterfragment", it.toString())
             daftarBeritaAdapter.updateDaftarBerita(it)
         })
 

@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
+import androidx.databinding.BindingAdapter
 import androidx.room.Room
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
@@ -45,4 +46,9 @@ fun buildDB(context: Context):SatuJiwaDatabase{
     val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).createFromAsset("satujiwadb.db").build()
 
     return db
+}
+
+@BindingAdapter("android:imageUrl", "android:progressBar")
+fun loadPhotoURL(view:ImageView, url:String?, pb:ProgressBar){
+    view.loadImage(url, pb)
 }
