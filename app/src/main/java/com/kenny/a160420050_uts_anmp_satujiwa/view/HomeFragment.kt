@@ -1,6 +1,7 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.view
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -33,11 +34,10 @@ class HomeFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(ListViewModel::class.java)
         viewModel.refresh()
-        val recView = view.findViewById<RecyclerView>(R.id.recycleViewDonasi)
 
+        val recView = view.findViewById<RecyclerView>(R.id.recycleViewDonasi)
         recView.layoutManager = LinearLayoutManager(context)
         recView.adapter = daftarDonasiAdapter
-        observeViewModel(view)
 
         val swipe = view.findViewById<SwipeRefreshLayout>(R.id.refreshLayoutDonasi)
         swipe.setOnRefreshListener {
@@ -51,6 +51,7 @@ class HomeFragment : Fragment() {
             swipe.isRefreshing = false
 
         }
+        observeViewModel(view)
     }
 
     fun observeViewModel(view: View){
@@ -60,6 +61,7 @@ class HomeFragment : Fragment() {
         val txtErrorDaftarDonasi = view.findViewById<TextView>(R.id.txtErrorDaftarDonasi)
 
         viewModel.donasisLD.observe(viewLifecycleOwner, Observer {
+            Log.d("adapterfragmentDonasi", it.toString())
             daftarDonasiAdapter.updateDaftarDonasi(it)
         })
 

@@ -35,10 +35,11 @@ class ProfileFragment : Fragment() {
 
         imgProfilePengguna.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/kenny.jpg", progressBarImagePenggunaProfile)
         imgProfileSatuJiwaLogo.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/logosatujiwa.png", progressBarLogoSatuJiwa)
-        btnEditProfile.setOnClickListener{
-            val action = ProfileFragmentDirections.actionProfileEditProfile()
-            Navigation.findNavController(it).navigate(action)
-        }
+
+//        btnEditProfile.setOnClickListener{
+//            val action = ProfileFragmentDirections.actionProfileEditProfile()
+//            Navigation.findNavController(it).navigate(action)
+//        }
         btnProfileAboutSatuJiwa.setOnClickListener{
             val action = ProfileFragmentDirections.actionProfileAbout()
             Navigation.findNavController(it).navigate(action)

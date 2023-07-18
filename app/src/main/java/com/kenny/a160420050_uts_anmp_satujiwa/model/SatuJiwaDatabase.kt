@@ -1,5 +1,6 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.model
 
+import android.annotation.SuppressLint
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -18,7 +19,9 @@ abstract class SatuJiwaDatabase: RoomDatabase() {
 
         private fun buildDatabase(context: Context) = Room.databaseBuilder(
             context.applicationContext,
-            SatuJiwaDatabase::class.java, "satujiwadb").createFromAsset("satujiwadb.db").build()
+            SatuJiwaDatabase::class.java, "satujiwadb")
+            .createFromAsset("satujiwadb.db")
+            .build()
 
         operator fun invoke(context: Context){
             if(instance != null){

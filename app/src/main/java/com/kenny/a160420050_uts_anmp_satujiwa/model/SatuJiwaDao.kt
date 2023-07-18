@@ -1,9 +1,6 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.model
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface DonasiDao {
@@ -39,4 +36,10 @@ interface UserDao {
 
     @Query("SELECT * from user")
     fun selectAllUser(): List<User>
+
+    @Query("SELECT * from user WHERE uuid=:id")
+    fun selectAllUser(id:Int): User
+
+    @Query("UPDATE user SET phoneNumber=:phoneNumber, address=:address WHERE uuid =:id")
+    fun updateProfile(phoneNumber: String, address: String, id: Int)
 }

@@ -33,6 +33,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application), C
 
             donasisLD.postValue(db.donasiDao().selectAllDonasi())
         }
+        loadingLD.value = false
     }
 
 }

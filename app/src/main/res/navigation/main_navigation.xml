@@ -91,7 +91,11 @@
         android:id="@+id/editProfileFragment"
         android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.EditProfileFragment"
         android:label="Edit Profile"
-        tools:layout="@layout/fragment_edit_profile" />
+        tools:layout="@layout/fragment_edit_profile" >
+        <argument
+            android:name="uuid"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/itemAksiNyata"
         android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DaftarAksiNyataFragment"

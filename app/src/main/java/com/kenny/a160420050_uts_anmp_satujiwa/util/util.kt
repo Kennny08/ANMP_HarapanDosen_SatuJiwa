@@ -6,11 +6,12 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import androidx.databinding.BindingAdapter
 import androidx.room.Room
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import com.kenny.a160420050_uts_anmp_satujiwa.R
 import com.kenny.a160420050_uts_anmp_satujiwa.model.SatuJiwaDatabase
-
 
 fun ImageView.loadImage(url:String?, progressBar: ProgressBar){
     Picasso.get()

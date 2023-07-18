@@ -51,7 +51,7 @@ class DaftarDonasiSayaAdapter(val daftarDonasiSaya: ArrayList<Donasi>) :
         return daftarDonasiSaya.size
     }
 
-    fun updateDaftarDonasiSaya(newDaftarDonasiSaya: ArrayList<Donasi>) {
+    fun updateDaftarDonasiSaya(newDaftarDonasiSaya: List<Donasi>) {
         daftarDonasiSaya.clear()
         daftarDonasiSaya.addAll(newDaftarDonasiSaya)
         notifyDataSetChanged()

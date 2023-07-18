@@ -41,7 +41,7 @@ class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(app
                     result as ArrayList<Donasi> /* = java.util.ArrayList<com.kenny.a160420050_week4.model.Student> */
 
                 loadingLD.value = false
-                Log.d("showvoley", it)
+                Log.d("showvoley", result.toString())
             },
             {
                 Log.d("showvoley", it.toString())
