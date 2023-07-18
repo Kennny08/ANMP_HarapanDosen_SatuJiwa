@@ -76,7 +76,7 @@ class DetailDonasiSayaFragment : Fragment() {
             var donasi = it
             txtDetailNamaDonasiSaya.text = donasi.namaDonasi
             txtDetailProgressDonasiSaya.text = "Rp. " + donasi.donasiTerkumpul
-            txtDetailSisaHariDonasiSaya.text = donasi.sisaHari + " hari lagi"
+            txtDetailSisaHariDonasiSaya.text = donasi.sisaHari.toString() + " hari lagi"
             var targetDonasi = donasi.targetDonasi.toString().toDouble()
             var progress:Double = (donasi.donasiTerkumpul.toString().toDouble() / targetDonasi) * 100
             progressBarDetailDonasiSaya.setProgress(progress.toInt())
@@ -85,7 +85,7 @@ class DetailDonasiSayaFragment : Fragment() {
             txtDetailNamaPenggalangDonasiSaya.text = donasi.namaPenggalang
             txtDetailTanggalPenggalanganDonasiSaya.text = "Tanggal Penggalangan : " + donasi.tanggalPenggalanganDana
             txtDetailDeskripsiDonasiSaya.text = donasi.deskripsiDonasi
-            txtDetailTotalDonaturDonasiSaya.text = "( " + donasi.daftarDonatur?.size.toString() + " Donatur )"
+//            txtDetailTotalDonaturDonasiSaya.text = "( " + donasi.deskripsiDonasi?.size.toString() + " Donatur )"
             imgDetailDonasiSaya.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + donasi.fotoDonasi, progressBarDetailImageDonasiSaya)
             imgDetailPenggalangDonasiSaya.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + donasi.fotoPenggalang, progressBarDetailImagePenggalangDonasiSaya)
         })
@@ -98,7 +98,7 @@ class DetailDonasiSayaFragment : Fragment() {
 
         viewModel.penyaluranDanaLD.observe(viewLifecycleOwner, Observer {
             if (it != null) {
-                daftarPenyaluranDana.updateDaftarPenyaluranDana(it)
+//                daftarPenyaluranDana.updateDaftarPenyaluranDana(it)
             }
         })
     }

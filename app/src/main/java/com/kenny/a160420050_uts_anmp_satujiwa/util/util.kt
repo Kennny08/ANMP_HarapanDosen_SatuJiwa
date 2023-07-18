@@ -1,11 +1,14 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.util
 
+import android.content.Context
 import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
+import androidx.room.Room
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import com.kenny.a160420050_uts_anmp_satujiwa.R
+import com.kenny.a160420050_uts_anmp_satujiwa.model.SatuJiwaDatabase
 
 
 fun ImageView.loadImage(url:String?, progressBar: ProgressBar){
@@ -34,4 +37,12 @@ fun ImageView.loadImageDonatur(url:String?, progressBar: ProgressBar){
             override fun onError(e: Exception?) {
             }
         })
+}
+
+val DB_NAME = "satujiwadb"
+
+fun buildDB(context: Context):SatuJiwaDatabase{
+    val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).build()
+
+    return db
 }

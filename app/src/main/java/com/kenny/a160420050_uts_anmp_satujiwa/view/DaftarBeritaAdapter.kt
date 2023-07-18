@@ -40,7 +40,7 @@ class DaftarBeritaAdapter(val daftarBerita: ArrayList<Berita>) :
 
 
         btnBacaBerita.setOnClickListener{
-            val action = DaftarBeritaFragmentDirections.actionDetailBerita(daftarBerita[position].id.toString())
+            val action = DaftarBeritaFragmentDirections.actionDetailBerita(daftarBerita[position].uuid.toString())
             Navigation.findNavController(it).navigate(action)
         }
     }

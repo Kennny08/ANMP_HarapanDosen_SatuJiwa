@@ -11,10 +11,9 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
-import com.kenny.a160420050_uts_anmp_satujiwa.model.DonasiSaya
 
 class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(application) {
-    val donasiSayaLD = MutableLiveData<ArrayList<DonasiSaya>>()
+    val donasiSayaLD = MutableLiveData<ArrayList<Donasi>>()
     val donasiSayaLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 
@@ -36,10 +35,10 @@ class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(app
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             {
-                val sType = object : TypeToken<List<DonasiSaya>>() {}.type
-                val result = Gson().fromJson<List<DonasiSaya>>(it, sType)
+                val sType = object : TypeToken<List<Donasi>>() {}.type
+                val result = Gson().fromJson<List<Donasi>>(it, sType)
                 donasiSayaLD.value =
-                    result as ArrayList<DonasiSaya> /* = java.util.ArrayList<com.kenny.a160420050_week4.model.Student> */
+                    result as ArrayList<Donasi> /* = java.util.ArrayList<com.kenny.a160420050_week4.model.Student> */
 
                 loadingLD.value = false
                 Log.d("showvoley", it)

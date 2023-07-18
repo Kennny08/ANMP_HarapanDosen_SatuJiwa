@@ -32,8 +32,7 @@ class DaftarDonaturAdapter(val daftarDonatur: ArrayList<Donatur>) :
         val progressBarImageDonatur = holder.view.findViewById<ProgressBar>(R.id.progressBarImageDonatur)
 
 
-        imgDetailDonasiDonatur.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + daftarDonatur[position].fotoDonatur, progressBarImageDonatur)
-        txtDetailNamaDonatur.text = daftarDonatur[position].namaDonatur
+        txtDetailNamaDonatur.text = daftarDonatur[position].idDonatur.toString()
         txtDetailTanggalDonatur.text = "Donasi pada : " + daftarDonatur[position].tanggalDonasi
         txtDetailJumlahDonasiDonatur.text = "Jumlah : Rp. " + daftarDonatur[position].jumlahDonasi
 

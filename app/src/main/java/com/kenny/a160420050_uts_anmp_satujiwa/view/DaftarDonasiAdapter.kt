@@ -30,7 +30,6 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
         val progressBarDonasi = holder.view.findViewById<ProgressBar>(R.id.progressBarDonasi)
         val progressBarImageDonasi = holder.view.findViewById<ProgressBar>(R.id.progressBarImageDonasi)
         val txtDanaTerkumpul = holder.view.findViewById<TextView>(R.id.txtDanaTerkumpul)
-        val txtTargetHari = holder.view.findViewById<TextView>(R.id.txtTargetHari)
         val btnDetail = holder.view.findViewById<Button>(R.id.btnDetail)
         val imgDonasi = holder.view.findViewById<ImageView>(R.id.imgDonasi)
 
@@ -41,10 +40,9 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
         var targetDonasi = daftarDonasi[position].targetDonasi.toString().toDouble()
         var progress:Double = (daftarDonasi[position].donasiTerkumpul.toString().toDouble() / targetDonasi) * 100
         progressBarDonasi.setProgress(progress.toInt())
-        txtTargetHari.text = daftarDonasi[position].sisaHari
 
         btnDetail.setOnClickListener{
-            val action = HomeFragmentDirections.actionDetailDonasi(daftarDonasi[position].id.toString())
+            val action = HomeFragmentDirections.actionDetailDonasi(daftarDonasi[position].uuid.toString())
             Navigation.findNavController(it).navigate(action)
         }
 
@@ -54,7 +52,7 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
         return daftarDonasi.size
     }
 
-    fun updateDaftarDonasi(newDaftarDonasi: ArrayList<Donasi>) {
+    fun updateDaftarDonasi(newDaftarDonasi: List<Donasi>) {
         daftarDonasi.clear()
         daftarDonasi.addAll(newDaftarDonasi)
         notifyDataSetChanged()

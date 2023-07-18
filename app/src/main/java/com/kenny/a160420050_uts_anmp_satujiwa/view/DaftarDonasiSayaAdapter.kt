@@ -11,10 +11,9 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.kenny.a160420050_uts_anmp_satujiwa.R
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
-import com.kenny.a160420050_uts_anmp_satujiwa.model.DonasiSaya
 import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
 
-class DaftarDonasiSayaAdapter(val daftarDonasiSaya: ArrayList<DonasiSaya>) :
+class DaftarDonasiSayaAdapter(val daftarDonasiSaya: ArrayList<Donasi>) :
     RecyclerView.Adapter<DaftarDonasiSayaAdapter.DonasiSayaViewHolder>() {
     class DonasiSayaViewHolder(var view: View) : RecyclerView.ViewHolder(view)
 
@@ -41,10 +40,9 @@ class DaftarDonasiSayaAdapter(val daftarDonasiSaya: ArrayList<DonasiSaya>) :
         var targetDonasi = daftarDonasiSaya[position].targetDonasi.toString().toDouble()
         var progress:Double = (daftarDonasiSaya[position].donasiTerkumpul.toString().toDouble() / targetDonasi) * 100
         progressBarDonasiSaya.setProgress(progress.toInt())
-        txtTargetHariDonasiSaya.text = daftarDonasiSaya[position].sisaHari
 
         btnDetailDonasiSaya.setOnClickListener{
-            val action = DaftarDonasiSayaFragmentDirections.actionDetailDonasiSaya(daftarDonasiSaya[position].id.toString())
+            val action = DaftarDonasiSayaFragmentDirections.actionDetailDonasiSaya(daftarDonasiSaya[position].uuid.toString())
             Navigation.findNavController(it).navigate(action)
         }
     }
@@ -53,7 +51,7 @@ class DaftarDonasiSayaAdapter(val daftarDonasiSaya: ArrayList<DonasiSaya>) :
         return daftarDonasiSaya.size
     }
 
-    fun updateDaftarDonasiSaya(newDaftarDonasiSaya: ArrayList<DonasiSaya>) {
+    fun updateDaftarDonasiSaya(newDaftarDonasiSaya: ArrayList<Donasi>) {
         daftarDonasiSaya.clear()
         daftarDonasiSaya.addAll(newDaftarDonasiSaya)
         notifyDataSetChanged()

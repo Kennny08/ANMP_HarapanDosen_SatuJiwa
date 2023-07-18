@@ -13,7 +13,6 @@ import com.google.gson.reflect.TypeToken
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Berita
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
-import com.kenny.a160420050_uts_anmp_satujiwa.model.PenyaluranDana
 
 class DetailBeritaViewModel(application: Application) : AndroidViewModel(application){
     val beritaLD = MutableLiveData<Berita>()
@@ -41,12 +40,12 @@ class DetailBeritaViewModel(application: Application) : AndroidViewModel(applica
                 val sType = object : TypeToken<List<Berita>>() {}.type
                 val result = Gson().fromJson<List<Berita>>(it, sType)
                 val daftarBerita = result as ArrayList<Berita>
-                for (berita in daftarBerita){
-                    if (berita.id ==  idBerita){
-                        beritaLD.value = berita
-                        break
-                    }
-                }
+//                for (berita in daftarBerita){
+//                    if (berita.id ==  idBerita){
+//                        beritaLD.value = berita
+//                        break
+//                    }
+//                }
                 loadingLD.value = false
                 Log.d("showvoley", it)
             },

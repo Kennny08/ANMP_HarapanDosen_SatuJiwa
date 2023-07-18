@@ -1,73 +1,85 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.model
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class Donasi(
-    val id:String?,
-    val namaDonasi:String?,
-    val fotoDonasi:String?,
-    val namaPenggalang:String?,
-    val fotoPenggalang:String?,
-    val tanggalPenggalanganDana:String?,
-    val tanggalTargetPenggalangan:String?,
-    val sisaHari:String?,
-    val targetDonasi:String?,
-    val donasiTerkumpul:String?,
-    val jumlahDonatur:String?,
-    val deskripsiDonasi:String?,
-    val penyaluranDana:ArrayList<PenyaluranDana>?,
-    val daftarDonatur: ArrayList<Donatur>?
-)
+    @ColumnInfo(name="namaDonasi")
+    val namaDonasi:String,
+    @ColumnInfo(name="fotoDonasi")
+    val fotoDonasi:String,
+    @ColumnInfo(name="namaPenggalang")
+    val namaPenggalang:String,
+    @ColumnInfo(name="fotoPenggalang")
+    val fotoPenggalang:String,
+    @ColumnInfo(name="tanggalPenggalangDana")
+    val tanggalPenggalanganDana:String,
+    @ColumnInfo(name="tanggalTargetPenggalangan")
+    val tanggalTargetPenggalangan:String,
+    @ColumnInfo(name="sisaHari")
+    val sisaHari:Int,
+    @ColumnInfo(name="targetDonasi")
+    val targetDonasi:Double,
+    @ColumnInfo(name="donasiTerkumpul")
+    val donasiTerkumpul:Double,
+    @ColumnInfo(name="jumlahDonatur")
+    val jumlahDonatur:Int,
+    @ColumnInfo(name="deskripsiDonasi")
+    val deskripsiDonasi:String,
+    @ColumnInfo(name="status")
+    val status:Int=1
+) {
+    @PrimaryKey(autoGenerate = true)
+    var uuid:Int=0
+}
 
+@Entity
 data class Donatur(
-    val namaDonatur:String?,
-    val fotoDonatur:String?,
-    val jumlahDonasi:String?,
-    val tanggalDonasi : String?
+    @ColumnInfo(name="idDonatur")
+    val idDonatur:Int,
+    @ColumnInfo(name="idDonasi")
+    val idDonasi:Int,
+    @ColumnInfo(name="jumlahDonasi")
+    val jumlahDonasi:Double,
+    @ColumnInfo(name="tanggalDonasi")
+    val tanggalDonasi : String
+){
+    @PrimaryKey(autoGenerate = true)
+    var uuid:Int=0
+}
 
-)
-
-data class PenyaluranDana(
-    val namaPenerima:String?,
-    val tanggalTerima:String?,
-    val donasiDiterima:String?,
-    val penggunaanDana:String?,
-)
-
+@Entity
 data class Berita(
-    val id:String?,
-    val judulBerita:String?,
-    val namaPenulis:String?,
-    val tanggalBerita:String?,
-    val gambarBerita:String?,
-    val isiBerita:String?
-)
+    @ColumnInfo(name="judulBerita")
+    val judulBerita:String,
+    @ColumnInfo(name="namaPenulis")
+    val namaPenulis:String,
+    @ColumnInfo(name="tanggalBerita")
+    val tanggalBerita:String,
+    @ColumnInfo(name="gambarBerita")
+    val gambarBerita:String,
+    @ColumnInfo(name="isiBerita")
+    val isiBerita:String
+){
+    @PrimaryKey(autoGenerate = true)
+    var uuid:Int=0
+}
 
-data class AksiNyata(
-    val id:String?,
-    val namaAksiNyata:String?,
-    val fotoAksiNyata:String?,
-    val namaPenggalang:String?,
-    val fotoPenggalang:String?,
-    val tanggalPenggalanganDana:String?,
-    val tanggalTargetPenggalangan:String?,
-    val donasiTerkumpul:String?,
-    val deskripsiAksiNyata:String?,
-    val penyaluranDana:ArrayList<PenyaluranDana>?,
-    val daftarDonatur: ArrayList<Donatur>?
-)
-
-data class DonasiSaya(
-    val id:String?,
-    val namaDonasi:String?,
-    val fotoDonasi:String?,
-    val namaPenggalang:String?,
-    val fotoPenggalang:String?,
-    val tanggalPenggalanganDana:String?,
-    val tanggalTargetPenggalangan:String?,
-    val sisaHari:String?,
-    val targetDonasi:String?,
-    val donasiTerkumpul:String?,
-    val jumlahDonatur:String?,
-    val deskripsiDonasi:String?,
-    val penyaluranDana:ArrayList<PenyaluranDana>?,
-    val daftarDonatur: ArrayList<Donatur>?
-)
+@Entity
+data class User(
+    @ColumnInfo(name="name")
+    val judulBerita:String,
+    @ColumnInfo(name="phoneNumber")
+    val phoneNumber:String,
+    @ColumnInfo(name="address")
+    val address:String,
+    @ColumnInfo(name="username")
+    val username:String,
+    @ColumnInfo(name="password")
+    val password:String
+){
+    @PrimaryKey(autoGenerate = true)
+    var uuid:Int=0
+}
