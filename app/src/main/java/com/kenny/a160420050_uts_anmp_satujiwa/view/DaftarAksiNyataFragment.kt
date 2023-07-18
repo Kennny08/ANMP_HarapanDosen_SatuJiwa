@@ -60,9 +60,9 @@ class DaftarAksiNyataFragment : Fragment() {
         val progressBarLoadDaftarAksiNyata = view.findViewById<ProgressBar>(R.id.progressBarLoadDaftarAksiNyata)
         val txtErrorLoadDaftarAksiNyata = view.findViewById<TextView>(R.id.txtErrorLoadDaftarAksiNyata)
 
-//        viewModel.aksiNyataLD.observe(viewLifecycleOwner, Observer {
-//            daftarAksiNyataAdapter.updateDaftarAksiNyata(it)
-//        })
+        viewModel.aksiNyataLD.observe(viewLifecycleOwner, Observer {
+            daftarAksiNyataAdapter.updateDaftarAksiNyata(it)
+        })
 
         viewModel.aksiNyataLoadErrorLD.observe(viewLifecycleOwner, Observer {
             if(it == true) {

@@ -1,225 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.DetailAksiNyataFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ScrollView
+    <data>
+        <variable
+            name="aksinyata"
+            type="com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi" />
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true">
+        android:layout_height="match_parent"
+        tools:context=".view.DetailAksiNyataFragment">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
 
-            <ImageView
-                android:id="@+id/imgDetailAksiNyata"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                tools:src="@tools:sample/avatars" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/txtDetailNamaAksiNyata"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgDetailAksiNyata"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="20dp"
-                android:text="Bantu Selamatkan Lansia Dhuafa dari Tumor Ganas!"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/imgDetailAksiNyata"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0dp"
+                    android:imageUrl="@{aksinyata.fotoDonasi}"
+                    android:progressBar="@{progressBarDetailImageAksiNyata}"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@tools:sample/avatars" />
 
-            <TextView
-                android:id="@+id/txtDetailDonasiTerkumpulAksiNyata"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Terkumpul Rp. 150000000"
-                android:textAlignment="center"
-                android:textColor="#de0e00"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDetailNamaAksiNyata" />
+                <TextView
+                    android:id="@+id/txtDetailNamaAksiNyata"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDetailAksiNyata"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@{aksinyata.namaDonasi}"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtDetailTargetTanggalAksiNyata"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Donasi ditutup pada 02-05-2023"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDetailDonasiTerkumpulAksiNyata" />
+                <TextView
+                    android:id="@+id/txtDetailDonasiTerkumpulAksiNyata"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@{`Terkumpul Rp. ` + String.valueOf(aksinyata.donasiTerkumpul)}"
+                    android:textAlignment="center"
+                    android:textColor="#de0e00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDetailNamaAksiNyata" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewDetailPenggalang"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDetailTargetTanggalAksiNyata">
+                <TextView
+                    android:id="@+id/txtDetailTargetTanggalAksiNyata"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Donasi ditutup pada `+ aksinyata.tanggalTargetPenggalangan}"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDetailDonasiTerkumpulAksiNyata" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewDetailPenggalang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDetailTargetTanggalAksiNyata">
 
-                    <ImageView
-                        android:id="@+id/imgDetailPenggalangAksiNyata"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView18"
-                        app:layout_constraintVertical_bias="0.0"
-                        tools:src="@tools:sample/avatars" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/txtDetailTanggalPenggalanganAksiNyata"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="16dp"
-                        android:text="Tanggal Penggalangan : 10 Maret 2023"
-                        android:textSize="13sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@+id/imgDetailPenggalangAksiNyata"
-                        app:layout_constraintTop_toBottomOf="@+id/txtDetailNamaPenggalangAksiNyata"
-                        app:layout_constraintVertical_bias="0.0" />
+                        <ImageView
+                            android:id="@+id/imgDetailPenggalangAksiNyata"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="centerCrop"
+                            android:imageUrl="@{aksinyata.fotoPenggalang}"
+                            android:progressBar="@{progressBarDetailImagePenggalangAksiNyata}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:src="@tools:sample/avatars" />
 
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Penggalang Dana"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.065"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/txtDetailTanggalPenggalanganAksiNyata"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@{`Tanggal Penggalangan : ` + aksinyata.tanggalPenggalanganDana}"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imgDetailPenggalangAksiNyata"
+                            app:layout_constraintTop_toBottomOf="@+id/txtDetailNamaPenggalangAksiNyata"
+                            app:layout_constraintVertical_bias="0.0" />
 
-                    <TextView
-                        android:id="@+id/txtDetailNamaPenggalangAksiNyata"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="17dp"
-                        android:layout_marginEnd="16dp"
-                        android:text="Yayasan Peduli Kasih"
-                        android:textColor="#de0e00"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@+id/imgDetailPenggalangAksiNyata"
-                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Penggalang Dana"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.065"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <ProgressBar
-                        android:id="@+id/progressBarDetailImagePenggalangAksiNyata"
-                        style="?android:attr/progressBarStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="@+id/imgDetailPenggalangAksiNyata"
-                        app:layout_constraintEnd_toEndOf="@+id/imgDetailPenggalangAksiNyata"
-                        app:layout_constraintStart_toStartOf="@+id/imgDetailPenggalangAksiNyata"
-                        app:layout_constraintTop_toTopOf="@+id/imgDetailPenggalangAksiNyata" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/txtDetailNamaPenggalangAksiNyata"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@{aksinyata.namaPenggalang}"
+                            android:textColor="#de0e00"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imgDetailPenggalangAksiNyata"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
-            </androidx.cardview.widget.CardView>
+                        <ProgressBar
+                            android:id="@+id/progressBarDetailImagePenggalangAksiNyata"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgDetailPenggalangAksiNyata"
+                            app:layout_constraintEnd_toEndOf="@+id/imgDetailPenggalangAksiNyata"
+                            app:layout_constraintStart_toStartOf="@+id/imgDetailPenggalangAksiNyata"
+                            app:layout_constraintTop_toTopOf="@+id/imgDetailPenggalangAksiNyata" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <ProgressBar
-                android:id="@+id/progressBarDetailImageAksiNyata"
-                style="?android:attr/progressBarStyle"
-                app:layout_constraintBottom_toBottomOf="@+id/imgDetailAksiNyata"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/imgDetailAksiNyata"
-                app:layout_constraintTop_toTopOf="@+id/imgDetailAksiNyata"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewDeskripsiDonasi"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardViewDetailPenggalang">
+                <ProgressBar
+                    android:id="@+id/progressBarDetailImageAksiNyata"
+                    style="?android:attr/progressBarStyle"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDetailAksiNyata"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imgDetailAksiNyata"
+                    app:layout_constraintTop_toTopOf="@+id/imgDetailAksiNyata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewDeskripsiDonasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewDetailPenggalang">
 
-                    <TextView
-                        android:id="@+id/txtDetailDeskripsiAksiNyata"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:justificationMode="inter_word"
-                        android:text="Lorem Ipsum....."
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="20dp"
-                        android:text="Deskripsi Penggalangan Dana"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/txtDetailDeskripsiAksiNyata"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="@{aksinyata.deskripsiDonasi}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="Deskripsi Penggalangan Dana"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
-    </ScrollView>
-</FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </FrameLayout>
+</layout>

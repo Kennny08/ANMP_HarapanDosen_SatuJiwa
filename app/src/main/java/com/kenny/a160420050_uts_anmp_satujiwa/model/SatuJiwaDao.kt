@@ -1,6 +1,9 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.model
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 
 @Dao
 interface DonasiDao {
@@ -9,6 +12,12 @@ interface DonasiDao {
 
     @Query("SELECT * from donasi where status=1")
     fun selectAllDonasi(): List<Donasi>
+
+    @Query("SELECT * from donasi where status=0")
+    fun selectAllAksiNyata(): List<Donasi>
+
+    @Query("SELECT * from donasi WHERE uuid=:id")
+    fun selectSpecifiedDonasi(id:Int): Donasi
 }
 
 @Dao
@@ -39,6 +48,9 @@ interface UserDao {
 
     @Query("SELECT * from user")
     fun selectAllUser(): List<User>
+
+    @Query("SELECT * from user where username=:username and password=:password")
+    fun login(username:String, password:String) : User
 
     @Query("SELECT * from user WHERE uuid=:id")
     fun selectAllUser(id:Int): User
