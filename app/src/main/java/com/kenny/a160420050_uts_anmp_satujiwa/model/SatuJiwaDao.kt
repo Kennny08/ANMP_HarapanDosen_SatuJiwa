@@ -27,6 +27,9 @@ interface BeritaDao {
 
     @Query("SELECT * from berita")
     fun selectAllBerita(): List<Berita>
+
+    @Query("SELECT * from berita WHERE uuid=:id")
+    fun selectSpecifiedBerita(id:Int): Berita
 }
 
 @Dao

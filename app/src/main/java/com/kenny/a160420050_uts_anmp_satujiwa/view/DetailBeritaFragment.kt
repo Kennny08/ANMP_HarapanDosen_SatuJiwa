@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.kenny.a160420050_uts_anmp_satujiwa.R
+import com.kenny.a160420050_uts_anmp_satujiwa.databinding.FragmentDetailBeritaBinding
 import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailBeritaViewModel
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailDonasiViewModel
@@ -18,14 +20,16 @@ import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailDonasiViewModel
 class DetailBeritaFragment : Fragment() {
 
     private lateinit var viewModel: DetailBeritaViewModel
-    private var beritaId : String = ""
+    private lateinit var dataBinding: FragmentDetailBeritaBinding
+    private var beritaId : Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail_berita, container, false)
+        dataBinding = DataBindingUtil.inflate<FragmentDetailBeritaBinding>(inflater, R.layout.fragment_detail_berita, container, false)
+        return dataBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,25 +46,8 @@ class DetailBeritaFragment : Fragment() {
     }
 
     fun observeViewModel(view: View) {
-        val txtDetailJudulBerita = view.findViewById<TextView>(R.id.txtDetailJudulBerita)
-        val txtDetailTanggalBerita = view.findViewById<TextView>(R.id.txtDetailTanggalBerita)
-        val txtDetailNamaPenulisBerita =view.findViewById<TextView>(R.id.txtDetailNamaPenulisBerita)
-        val txtDetailIsiBerita = view.findViewById<TextView>(R.id.txtDetailIsiBerita)
-        val imgDetailBerita = view.findViewById<ImageView>(R.id.imgDetailBerita)
-        val progressBarDetailImageBerita = view.findViewById<ProgressBar>(R.id.progressBarDetailImageBerita)
-
-
         viewModel.beritaLD.observe(viewLifecycleOwner, Observer {
-            var berita = it
-            txtDetailJudulBerita.text = berita.judulBerita
-            txtDetailTanggalBerita.text = berita.tanggalBerita
-            txtDetailNamaPenulisBerita.text = berita.namaPenulis
-            txtDetailIsiBerita.text = berita.isiBerita
-            imgDetailBerita.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + berita.gambarBerita, progressBarDetailImageBerita)
-
+            dataBinding.berita = it
         })
-
     }
-
-
 }

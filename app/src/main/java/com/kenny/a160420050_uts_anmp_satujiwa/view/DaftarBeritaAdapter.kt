@@ -56,7 +56,7 @@ class DaftarBeritaAdapter(val daftarBerita: ArrayList<Berita>) :
     }
 
     override fun onClick(v: View) {
-        val action = DaftarBeritaFragmentDirections.actionDetailBerita(v.tag.toString())
+        val action = DaftarBeritaFragmentDirections.actionDetailBerita(v.tag.toString().toInt())
         Navigation.findNavController(v).navigate(action)
     }
 }

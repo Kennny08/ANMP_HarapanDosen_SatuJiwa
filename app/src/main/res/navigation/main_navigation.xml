@@ -79,8 +79,7 @@
         tools:layout="@layout/fragment_detail_berita">
         <argument
             android:name="beritaId"
-            android:defaultValue="0"
-            app:argType="string" />
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/aboutSatuJiwaFragment"
