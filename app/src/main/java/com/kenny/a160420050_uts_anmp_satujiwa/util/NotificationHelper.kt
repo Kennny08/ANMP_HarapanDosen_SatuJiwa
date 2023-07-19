@@ -13,14 +13,14 @@ import com.kenny.a160420050_uts_anmp_satujiwa.R
 import com.kenny.a160420050_uts_anmp_satujiwa.view.MainActivity
 
 class NotificationHelper(val context: Context) {
-    private val CHANNEL_ID = "todo_channel_id"
-    private val CHANNEL_NAME = "todo_channel_name"
+    private val CHANNEL_ID = "satujiwa_channel_id"
+    private val CHANNEL_NAME = "satujiwa_channel_name"
     private val NOTIFICATION_ID = 1
 
     fun createNotificationChannel(){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT)
-            channel.description = "Todo channel description"
+            channel.description = "Satu Jiwa Channel Description"
 
             val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
