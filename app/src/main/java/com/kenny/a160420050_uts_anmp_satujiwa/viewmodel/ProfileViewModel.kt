@@ -23,11 +23,11 @@ class ProfileViewModel(application:Application):AndroidViewModel(application), C
         }
     }
 
-    fun updateAll(phoneNumber:String, address:String, password:String, id:Int)
+    fun updateAll(phoneNumber:String, address:String, newpassword:String, id:Int)
     {
         launch {
             val db = buildDB(getApplication())
-            db.userDao().updateProfileAll(phoneNumber, address, password, id)
+            db.userDao().updateProfileAll(phoneNumber, address, newpassword, id)
         }
     }
 

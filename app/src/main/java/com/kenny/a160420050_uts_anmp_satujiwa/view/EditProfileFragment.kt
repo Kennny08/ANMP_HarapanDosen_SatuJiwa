@@ -23,6 +23,7 @@ import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.ProfileViewModel
 class EditProfileFragment : Fragment() , ProfileEditInterface{
     private lateinit var viewModel: ProfileViewModel
     private lateinit var dataBinding: FragmentEditProfileBinding
+    private var uuid = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,7 +48,7 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
 
         dataBinding.simpanListener = this
 
-        val uuid = EditProfileFragmentArgs.fromBundle(requireArguments()).uuid
+        uuid = EditProfileFragmentArgs.fromBundle(requireArguments()).uuid
         viewModel.fetch(uuid)
         observeViewModel()
     }
@@ -63,7 +64,7 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
         val confirmPassword = view?.findViewById<EditText>(R.id.txtConfirmPassword)?.text.toString()
         if(user.password != "" && confirmPassword != ""){
             if(user.password == confirmPassword){
-                viewModel.updateAll(user.phoneNumber, user.address, user.password, user.uuid)
+                viewModel.updateAll(user.phoneNumber, user.address, confirmPassword, uuid)
                 Toast.makeText(v.context, "Profile updated with NEW PASSWORD", Toast.LENGTH_SHORT).show()
             }
             else{
@@ -71,7 +72,7 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
             }
         }
         else{
-            viewModel.update(user.phoneNumber, user.address, user.uuid)
+            viewModel.update(user.phoneNumber, user.address, uuid)
             Toast.makeText(v.context, "Profile updated", Toast.LENGTH_SHORT).show()
         }
         Navigation.findNavController(v).popBackStack()
