@@ -41,7 +41,6 @@ class DetailBeritaFragment : Fragment() {
                 DetailBeritaFragmentArgs.fromBundle(requireArguments()).beritaId
             viewModel.fetch(beritaId)
         }
-
         observeViewModel(view)
     }
 
