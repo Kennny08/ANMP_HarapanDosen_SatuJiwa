@@ -30,7 +30,6 @@ class ListViewModel(application: Application) : AndroidViewModel(application), C
 
         launch{
             val db = buildDB(getApplication())
-
             donasisLD.postValue(db.donasiDao().selectAllDonasi())
         }
         loadingLD.value = false

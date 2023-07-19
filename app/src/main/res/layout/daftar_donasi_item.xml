@@ -47,7 +47,6 @@
                     android:layout_marginEnd="20dp"
                     android:indeterminate="false"
                     android:max="100"
-                    android:progress="20"
                     android:progressBackgroundTint="#EBEBEC"
                     android:progressDrawable="@drawable/rounded_progressbar"
                     android:progressTint="#de0e00"
@@ -78,7 +77,8 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="sans-serif"
-                    android:text="@{String.valueOf(Double.valueOf(donasi.donasiTerkumpul))}"
+                    android:text="@{`Rp `+String.valueOf(donasi.donasiTerkumpul)}"
+
                     android:textColor="#000000"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,8 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
                     android:text="DONASI"
-
+                    android:onClick="@{donasiListener::onDonasiDetailClick}"
+                    android:tag="@{donasi.uuid}"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"

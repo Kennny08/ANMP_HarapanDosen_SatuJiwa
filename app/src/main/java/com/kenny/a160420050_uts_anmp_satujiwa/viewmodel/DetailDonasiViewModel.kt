@@ -12,55 +12,36 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
+import com.kenny.a160420050_uts_anmp_satujiwa.util.buildDB
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
+
 //import com.kenny.a160420050_uts_anmp_satujiwa.model.PenyaluranDana
 
-class DetailDonasiViewModel(application: Application) : AndroidViewModel(application){
+class DetailDonasiViewModel(application: Application
+) : AndroidViewModel(application), CoroutineScope{
     val donasisLD = MutableLiveData<Donasi>()
-    val donaturLD = MutableLiveData<ArrayList<Donatur>?>()
-//    val penyaluranDanaLD = MutableLiveData<ArrayList<PenyaluranDana>?>()
     val donasiLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 
-    val TAG = "volleyTag"
-    private var queue: RequestQueue? = null
+    private var job = Job()
+    override val coroutineContext: CoroutineContext
+    get() = job + Dispatchers.IO
 
-    override fun onCleared() {
-        super.onCleared()
-        queue?.cancelAll(TAG)
-    }
+    fun fetch(idDonasi:Int) {
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
 
-    fun fetch(idDonasi:String) {
-//        donasiLoadErrorLD.value = false
-//        loadingLD.value = true
-//
-//        queue = Volley.newRequestQueue(getApplication())
-//        val url =  "https://projectfspf.000webhostapp.com/projectutsanmp/donasi.json"
-//
-//        val stringRequest = StringRequest(
-//            Request.Method.GET, url,
-//            {
-//                val sType = object : TypeToken<List<Donasi>>() {}.type
-//                val result = Gson().fromJson<List<Donasi>>(it, sType)
-//                val daftarDonasi = result as ArrayList<Donasi>
-//                for (donasi in daftarDonasi){
-//                    if (donasi.id ==  idDonasi){
-//                        donasisLD.value = donasi
-//                        donaturLD.value = donasi.daftarDonatur
-//                        penyaluranDanaLD.value = donasi.penyaluranDana
-//                        break
-//                    }
-//                }
-//                loadingLD.value = false
-//                Log.d("showvoley", it)
-//            },
-//            {
-//                Log.d("showvoley", it.toString())
-//                donasiLoadErrorLD.value = false
-//                loadingLD.value = false
-//            })
-//
-//        stringRequest.tag = TAG
-//        queue?.add(stringRequest)
+        launch {
+            val db = buildDB(getApplication())
+
+            donasisLD.postValue(db.donasiDao().selectSpecifiedDonasi(idDonasi))
+        }
+        loadingLD.value = false
+
     }
 
 }

@@ -1,5 +1,6 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.view
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,6 +31,11 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
     override fun onBindViewHolder(holder: DonasiViewHolder, position: Int) {
         holder.view.donasi = daftarDonasi[position]
         holder.view.donasiListener = this
+
+        val progress = holder.itemView.findViewById<ProgressBar>(R.id.progressBarDonasi)
+        val hasil = Math.ceil(daftarDonasi[position].donasiTerkumpul*100/daftarDonasi[position].targetDonasi)
+        progress.setProgress(hasil.toInt())
+
 //        val txtNamaPenggalang = holder.view.findViewById<TextView>(R.id.txtNamaPenggalang)
 //        val txtNamaDonasi = holder.view.findViewById<TextView>(R.id.txtNamaDonasi)
 //        val progressBarDonasi = holder.view.findViewById<ProgressBar>(R.id.progressBarDonasi)
@@ -64,7 +70,7 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
     }
 
     override fun onDonasiDetailClick(v: View) {
-        val action = HomeFragmentDirections.actionDetailDonasi(v.tag.toString())
+        val action = HomeFragmentDirections.actionDetailDonasi(v.tag.toString().toInt())
         Navigation.findNavController(v).navigate(action)
     }
 }

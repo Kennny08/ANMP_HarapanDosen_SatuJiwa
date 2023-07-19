@@ -9,7 +9,7 @@
             type="com.kenny.a160420050_uts_anmp_satujiwa.model.User" />
         <variable
             name="loginlistener"
-            type="com.kenny.a160420050_uts_anmp_satujiwa.view.FragmentLoginTodoInterface" />
+            type="com.kenny.a160420050_uts_anmp_satujiwa.view.ActivityLoginTodoInterface" />
 
     </data>
 
@@ -102,7 +102,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
             android:text="LOGIN"
-            android:onClick="@{(view)->loginlistener.onLoginClick(view)}"
+            android:onClick="@{(view)->loginlistener.onLoginClick(view, user)}"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

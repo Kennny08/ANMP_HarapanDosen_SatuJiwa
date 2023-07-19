@@ -49,8 +49,7 @@
         tools:layout="@layout/fragment_detail_donasi" >
         <argument
             android:name="donasiId"
-            app:argType="string"
-            android:defaultValue="0" />
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/detailDonasiSayaFragment"

@@ -2,9 +2,11 @@ package com.kenny.a160420050_uts_anmp_satujiwa.view
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
@@ -16,52 +18,60 @@ import com.kenny.a160420050_uts_anmp_satujiwa.databinding.ActivityLoginBinding
 import com.kenny.a160420050_uts_anmp_satujiwa.model.User
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.LoginViewModel
 
-class LoginActivity : AppCompatActivity(), FragmentLoginTodoInterface {
+class LoginActivity : AppCompatActivity(), ActivityLoginTodoInterface {
 
     private lateinit var dataBinding:ActivityLoginBinding
     private lateinit var viewModel:LoginViewModel
-    private lateinit var curUser : User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        var sharedFile = "com.kenny.a160420050_uts_anmp_satujiwa"
+        var shared: SharedPreferences = getSharedPreferences(sharedFile, Context.MODE_PRIVATE)
+
+        var username = shared.getString("username", "")
+        if(username!="")
+        {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            this.finish()
+        }
+        dataBinding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(dataBinding.root)
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
-    }
-
-    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
-        return super.onCreateView(name, context, attrs)
-
         dataBinding.user = User("", "", "", "", "")
         dataBinding.loginlistener = this
+        observeViewModel()
     }
 
-//    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
-////        return super.onCreateView(name, context, attrs)
-//        dataBinding = DataBindingUtil.inflate(layoutInflater, R.layout.activity_login, null, false)
-//        return dataBinding.root
-//
-//    }
 
-    override fun onLoginClick(v: View) {
-        Toast.makeText(v.context, "Bisa", Toast.LENGTH_SHORT).show()
-//        viewModel.login(user)
-//
-//        var checkUser = viewModel.userLD as User
-//
-//        if (curUser.username == checkUser.username){
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            this.finish()
-//        }
-        //        observeViewModel()
+
+    override fun onLoginClick(v: View, user:User) {
+        viewModel.login(user)
     }
 
-//    fun observeViewModel(){
-//        viewModel.userLD.observe(viewL, Observer {
-//            curUser = it
-//
-//        })
-//    }
+    fun observeViewModel(){
+        viewModel.userLD.observe(this, Observer {
+            if (it == null){
+                Toast.makeText(this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show()
+                dataBinding.user = User("", "", "", "", "")
+
+            }else{
+                var sharedFile = "com.kenny.a160420050_uts_anmp_satujiwa"
+                var shared: SharedPreferences = getSharedPreferences(sharedFile, Context.MODE_PRIVATE)
+                var editor:SharedPreferences.Editor = shared.edit()
+                editor.putString("uuid", it.uuid.toString())
+                editor.putString("username", it.username)
+                editor.putString("name", it.name)
+                editor.apply()
+
+                val intent = Intent(this, MainActivity::class.java)
+                Toast.makeText(this, "Berhasil Login", Toast.LENGTH_SHORT).show()
+                startActivity(intent)
+                this.finish()
+            }
+
+        })
+    }
 
 
 }
