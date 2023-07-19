@@ -34,14 +34,64 @@ class DetailDonasiViewModel(application: Application
     fun fetch(idDonasi:Int) {
         donasiLoadErrorLD.value = false
         loadingLD.value = true
-
         launch {
             val db = buildDB(getApplication())
-
             donasisLD.postValue(db.donasiDao().selectSpecifiedDonasi(idDonasi))
         }
         loadingLD.value = false
-
     }
-
+    fun update100(idDonasi:Int) {
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donasiDao().updateDonasiTerkumpul100(idDonasi)
+        }
+        loadingLD.value = false
+    }
+    fun update500(idDonasi:Int) {
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donasiDao().updateDonasiTerkumpul500(idDonasi)
+        }
+        loadingLD.value = false
+    }
+    fun update1000(idDonasi:Int) {
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donasiDao().updateDonasiTerkumpul1000(idDonasi)
+        }
+        loadingLD.value = false
+    }
+    fun insert100(donatur: Donatur){
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donaturDao().insertAll(donatur)
+        }
+        loadingLD.value = false
+    }
+    fun insert500(donatur: Donatur){
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donaturDao().insertAll(donatur)
+        }
+        loadingLD.value = false
+    }
+    fun insert1000(donatur: Donatur){
+        donasiLoadErrorLD.value = false
+        loadingLD.value = true
+        launch {
+            val db = buildDB(getApplication())
+            db.donaturDao().insertAll(donatur)
+        }
+        loadingLD.value = false
+    }
 }

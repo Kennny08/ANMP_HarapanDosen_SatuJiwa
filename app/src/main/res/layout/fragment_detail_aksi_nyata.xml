@@ -57,7 +57,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="@{`Terkumpul Rp. ` + String.valueOf(aksinyata.donasiTerkumpul)}"
+
                     android:textAlignment="center"
                     android:textColor="#de0e00"
                     android:textSize="16sp"

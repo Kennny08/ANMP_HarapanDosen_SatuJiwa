@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.Toast
@@ -54,13 +55,25 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
     fun observeViewModel() {
         viewModel.userLD.observe(viewLifecycleOwner, Observer
         {
-            dataBinding.user = it
+            dataBinding.user = User(it.name, it.phoneNumber, it.address, it.username, "")
         })
     }
 
     override fun simpanClick(v: View, user: User) {
-        viewModel.update(user.phoneNumber, user.address, user.uuid)
-        Toast.makeText(v.context, "Profile updated", Toast.LENGTH_SHORT).show()
+        val confirmPassword = view?.findViewById<EditText>(R.id.txtConfirmPassword)?.text.toString()
+        if(user.password != "" && confirmPassword != ""){
+            if(user.password == confirmPassword){
+                viewModel.updateAll(user.phoneNumber, user.address, user.password, user.uuid)
+                Toast.makeText(v.context, "Profile updated with NEW PASSWORD", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this.context, "Konfirmasi password salah", Toast.LENGTH_SHORT).show()
+            }
+        }
+        else{
+            viewModel.update(user.phoneNumber, user.address, user.uuid)
+            Toast.makeText(v.context, "Profile updated", Toast.LENGTH_SHORT).show()
+        }
         Navigation.findNavController(v).popBackStack()
     }
 }

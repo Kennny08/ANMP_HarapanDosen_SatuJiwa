@@ -15,6 +15,7 @@ import com.kenny.a160420050_uts_anmp_satujiwa.R
 import com.kenny.a160420050_uts_anmp_satujiwa.databinding.DaftarDonasiItemBinding
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
 import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
+import java.math.BigDecimal
 
 class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
     RecyclerView.Adapter<DaftarDonasiAdapter.DonasiViewHolder>(), DonasiItemInterface {
@@ -32,31 +33,12 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
         holder.view.donasi = daftarDonasi[position]
         holder.view.donasiListener = this
 
+        val terkumpul = BigDecimal(daftarDonasi[position].donasiTerkumpul)
+        holder.itemView.findViewById<TextView>(R.id.txtDanaTerkumpul).text = "Rp "+ terkumpul.toString()
+
         val progress = holder.itemView.findViewById<ProgressBar>(R.id.progressBarDonasi)
         val hasil = Math.ceil(daftarDonasi[position].donasiTerkumpul*100/daftarDonasi[position].targetDonasi)
         progress.setProgress(hasil.toInt())
-
-//        val txtNamaPenggalang = holder.view.findViewById<TextView>(R.id.txtNamaPenggalang)
-//        val txtNamaDonasi = holder.view.findViewById<TextView>(R.id.txtNamaDonasi)
-//        val progressBarDonasi = holder.view.findViewById<ProgressBar>(R.id.progressBarDonasi)
-//        val progressBarImageDonasi = holder.view.findViewById<ProgressBar>(R.id.progressBarImageDonasi)
-//        val txtDanaTerkumpul = holder.view.findViewById<TextView>(R.id.txtDanaTerkumpul)
-//        val btnDetail = holder.view.findViewById<Button>(R.id.btnDetail)
-//        val imgDonasi = holder.view.findViewById<ImageView>(R.id.imgDonasi)
-//
-//        imgDonasi.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + daftarDonasi[position].fotoDonasi, progressBarImageDonasi)
-//        txtNamaPenggalang.text = daftarDonasi[position].namaPenggalang
-//        txtNamaDonasi.text = daftarDonasi[position].namaDonasi
-//        txtDanaTerkumpul.text = "Rp. " + daftarDonasi[position].donasiTerkumpul
-//        var targetDonasi = daftarDonasi[position].targetDonasi.toString().toDouble()
-//        var progress:Double = (daftarDonasi[position].donasiTerkumpul.toString().toDouble() / targetDonasi) * 100
-//        progressBarDonasi.setProgress(progress.toInt())
-//
-//        btnDetail.setOnClickListener{
-//            val action = HomeFragmentDirections.actionDetailDonasi(daftarDonasi[position].uuid.toString())
-//            Navigation.findNavController(it).navigate(action)
-//        }
-
     }
 
     override fun getItemCount(): Int {

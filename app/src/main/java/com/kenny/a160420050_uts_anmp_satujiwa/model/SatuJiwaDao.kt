@@ -18,12 +18,24 @@ interface DonasiDao {
 
     @Query("SELECT * from donasi WHERE uuid=:id")
     fun selectSpecifiedDonasi(id:Int): Donasi
+
+    @Query("UPDATE donasi SET donasiTerkumpul=donasiTerkumpul+100000.0 WHERE uuid=:id")
+    fun updateDonasiTerkumpul100(id:Int)
+
+    @Query("UPDATE donasi SET donasiTerkumpul=donasiTerkumpul+500000.0 WHERE uuid=:id")
+    fun updateDonasiTerkumpul500(id:Int)
+
+    @Query("UPDATE donasi SET donasiTerkumpul=donasiTerkumpul+1000000.0 WHERE uuid=:id")
+    fun updateDonasiTerkumpul1000(id:Int)
 }
 
 @Dao
 interface DonaturDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(vararg donatur: Donatur)
+
+//    @Query("INSERT INTO donatur values()")
+//    fun insertDonatur(donasiId:String, )
 
     @Query("SELECT * from donatur")
     fun selectAllDonatur(): List<Donatur>
@@ -57,4 +69,7 @@ interface UserDao {
 
     @Query("UPDATE user SET phoneNumber=:phoneNumber, address=:address WHERE uuid =:id")
     fun updateProfile(phoneNumber: String, address: String, id: Int)
+
+    @Query("UPDATE user SET phoneNumber=:phoneNumber, address=:address, password=:password WHERE uuid =:id")
+    fun updateProfileAll(phoneNumber: String, address: String, password:String, id: Int)
 }

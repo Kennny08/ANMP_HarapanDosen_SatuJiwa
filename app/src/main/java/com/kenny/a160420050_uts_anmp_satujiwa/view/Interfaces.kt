@@ -1,6 +1,7 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.view
 
 import android.view.View
+import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
 import com.kenny.a160420050_uts_anmp_satujiwa.model.User
 
 interface ActivityLoginTodoInterface{
@@ -26,9 +27,9 @@ interface AksiNyataItemInterface {
 }
 
 interface DetailDonasiInterface{
-    fun onDonasiNominalSatuClick(v:View)
-    fun onDonasiNominalDuaClick(v:View)
-    fun onDonasiNominalTigaClick(v:View)
+    fun onDonasiNominalSatuClick(v:View, donatur:Donatur)
+    fun onDonasiNominalDuaClick(v:View, donatur:Donatur)
+    fun onDonasiNominalTigaClick(v:View, donatur:Donatur)
 }
 
 interface ProfileInterface{

@@ -16,6 +16,7 @@ import com.kenny.a160420050_uts_anmp_satujiwa.databinding.DaftarDonasiItemBindin
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Berita
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
 import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
+import java.math.BigDecimal
 
 class DaftarAksiNyataAdapter (val daftarAksiNyata: ArrayList<Donasi>) :
     RecyclerView.Adapter<DaftarAksiNyataAdapter.AksiNyataViewHolder>(), AksiNyataItemInterface {
@@ -31,27 +32,9 @@ class DaftarAksiNyataAdapter (val daftarAksiNyata: ArrayList<Donasi>) :
     override fun onBindViewHolder(holder: AksiNyataViewHolder, position: Int) {
         holder.view.aksinyata = daftarAksiNyata[position]
         holder.view.detailAksiNyataListener = this
-//        val txtNamaPenggalangAksiNyata = holder.view.findViewById<TextView>(R.id.txtNamaPenggalangAksiNyata)
-//        val txtNamaAksiNyata = holder.view.findViewById<TextView>(R.id.txtNamaAksiNyata)
-//        val txtTanggalTargetAksiNyata = holder.view.findViewById<TextView>(R.id.txtTanggalTargetAksiNyata)
-//
-//        val progressBarImageAksiNyata = holder.view.findViewById<ProgressBar>(R.id.progressBarImageAksiNyata)
-//        val txtDanaTerkumpulAksiNyata = holder.view.findViewById<TextView>(R.id.txtDanaTerkumpulAksiNyata)
-//
-//        val btnDetailAksiNyata = holder.view.findViewById<Button>(R.id.btnDetailAksiNyata)
-//        val imgAksiNyata = holder.view.findViewById<ImageView>(R.id.imgAksiNyata)
-//
-//        imgAksiNyata.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + daftarAksiNyata[position].fotoDonasi, progressBarImageAksiNyata)
-//        txtNamaPenggalangAksiNyata.text = daftarAksiNyata[position].namaPenggalang
-//        txtNamaAksiNyata.text = daftarAksiNyata[position].namaDonasi
-//        txtDanaTerkumpulAksiNyata.text = "Rp. " + daftarAksiNyata[position].donasiTerkumpul
-//        txtTanggalTargetAksiNyata.text = daftarAksiNyata[position].tanggalTargetPenggalangan
-//
-//
-//        btnDetailAksiNyata.setOnClickListener{
-//            val action = DaftarAksiNyataFragmentDirections.actionDetailAksiNyata(daftarAksiNyata[position].uuid.toString())
-//            Navigation.findNavController(it).navigate(action)
-//        }
+
+        val terkumpul = BigDecimal(daftarAksiNyata[position].donasiTerkumpul)
+        holder.itemView.findViewById<TextView>(R.id.txtDanaTerkumpulAksiNyata).text = "Dana Terkumpul Rp "+ terkumpul.toString()
     }
 
     override fun getItemCount(): Int {

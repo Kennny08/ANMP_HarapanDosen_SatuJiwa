@@ -20,6 +20,7 @@ import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailAksiNyataViewModel
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailBeritaViewModel
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DetailDonasiViewModel
+import java.math.BigDecimal
 
 
 class DetailAksiNyataFragment : Fragment() {
@@ -54,6 +55,9 @@ class DetailAksiNyataFragment : Fragment() {
     fun observeViewModel(view: View){
         viewModel.aksiNyataLD.observe(viewLifecycleOwner, Observer {
             dataBinding.aksinyata = it
+
+            val terkumpul = BigDecimal(it.donasiTerkumpul)
+            view.findViewById<TextView>(R.id.txtDetailDonasiTerkumpulAksiNyata).text = "Terkumpul Rp "+ terkumpul.toString()
         })
     }
 }

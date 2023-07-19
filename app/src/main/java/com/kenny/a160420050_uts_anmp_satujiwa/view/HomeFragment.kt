@@ -61,7 +61,6 @@ class HomeFragment : Fragment() {
         val txtErrorDaftarDonasi = view.findViewById<TextView>(R.id.txtErrorDaftarDonasi)
 
         viewModel.donasisLD.observe(viewLifecycleOwner, Observer {
-            Log.d("adapterfragmentDonasi", it.toString())
             daftarDonasiAdapter.updateDaftarDonasi(it)
         })
 

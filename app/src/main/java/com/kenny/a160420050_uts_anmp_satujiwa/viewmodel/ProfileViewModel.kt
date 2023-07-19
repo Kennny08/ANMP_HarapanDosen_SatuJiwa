@@ -15,10 +15,19 @@ class ProfileViewModel(application:Application):AndroidViewModel(application), C
     private var job = Job()
     val userLD = MutableLiveData<User>()
 
+
     fun update(phoneNumber:String, address:String, id:Int) {
         launch {
             val db = buildDB(getApplication())
             db.userDao().updateProfile(phoneNumber, address, id)
+        }
+    }
+
+    fun updateAll(phoneNumber:String, address:String, password:String, id:Int)
+    {
+        launch {
+            val db = buildDB(getApplication())
+            db.userDao().updateProfileAll(phoneNumber, address, password, id)
         }
     }
 
