@@ -118,6 +118,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp"
             android:text="REGISTER"
+            android:onClick="@{loginlistener::onGoRegisterClick}"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

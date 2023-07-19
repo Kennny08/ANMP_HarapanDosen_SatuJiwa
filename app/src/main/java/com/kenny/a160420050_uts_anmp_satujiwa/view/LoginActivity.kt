@@ -49,6 +49,11 @@ class LoginActivity : AppCompatActivity(), ActivityLoginTodoInterface {
         viewModel.login(user)
     }
 
+    override fun onGoRegisterClick(v: View) {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
+    }
+
     fun observeViewModel(){
         viewModel.userLD.observe(this, Observer {
             if (it == null){

@@ -5,6 +5,7 @@ import com.kenny.a160420050_uts_anmp_satujiwa.model.User
 
 interface ActivityLoginTodoInterface{
     fun onLoginClick(v: View, user :User)
+    fun onGoRegisterClick(v:View)
 }
 
 interface BeritaItemInterface{
@@ -35,4 +36,9 @@ interface ProfileInterface{
     fun onDonasiSayaClick(v:View)
     fun onAboutSatuJiwaClick(v:View)
     fun onLogoutClick(v:View)
+}
+
+interface RegisterInterface{
+    fun onRegRegisterClick(v:View, user: User)
+    fun onGoLoginClick(v:View)
 }
