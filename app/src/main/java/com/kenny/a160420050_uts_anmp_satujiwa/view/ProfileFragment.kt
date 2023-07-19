@@ -83,7 +83,8 @@ class ProfileFragment : Fragment(), ProfileInterface {
     }
 
     override fun onDonasiSayaClick(v: View) {
-        TODO("Not yet implemented")
+        val action = ProfileFragmentDirections.actionDaftarDonasiSaya()
+        Navigation.findNavController(v).navigate(action)
     }
 
     override fun onAboutSatuJiwaClick(v: View) {

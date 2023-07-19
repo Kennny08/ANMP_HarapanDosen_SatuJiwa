@@ -11,45 +11,36 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
+import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
+import com.kenny.a160420050_uts_anmp_satujiwa.util.buildDB
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
 
-class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(application) {
-    val donasiSayaLD = MutableLiveData<ArrayList<Donasi>>()
+class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(application), CoroutineScope {
+    val donasiSayaLD = MutableLiveData<List<Donatur>>()
+    val donasiLD = MutableLiveData<Donasi>()
     val donasiSayaLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 
-    val TAG = "volleyTag"
-    private var queue: RequestQueue? = null
+    private var job = Job()
 
-    override fun onCleared() {
-        super.onCleared()
-        queue?.cancelAll(TAG)
-    }
+    override val coroutineContext: CoroutineContext
+        get() = job + Dispatchers.IO
 
-    fun refresh() {
+    fun refresh(userId: Int) {
         donasiSayaLoadErrorLD.value = false
         loadingLD.value = true
 
-        queue = Volley.newRequestQueue(getApplication())
-        val url =  "https://projectfspf.000webhostapp.com/projectutsanmp/donasisaya.json"
+        launch {
+            val db = buildDB(getApplication())
 
-        val stringRequest = StringRequest(
-            Request.Method.GET, url,
-            {
-                val sType = object : TypeToken<List<Donasi>>() {}.type
-                val result = Gson().fromJson<List<Donasi>>(it, sType)
-                donasiSayaLD.value =
-                    result as ArrayList<Donasi> /* = java.util.ArrayList<com.kenny.a160420050_week4.model.Student> */
-
-                loadingLD.value = false
-                Log.d("showvoley", result.toString())
-            },
-            {
-                Log.d("showvoley", it.toString())
-                donasiSayaLoadErrorLD.value = true
-                loadingLD.value = false
-            })
-
-        stringRequest.tag = TAG
-        queue?.add(stringRequest)
+            donasiSayaLD.postValue(db.donaturDao().selectSpecifiedDonatur(userId))
+        }
+        loadingLD.value = false
     }
+
+
 }

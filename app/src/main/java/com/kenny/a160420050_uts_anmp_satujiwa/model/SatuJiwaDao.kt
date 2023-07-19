@@ -39,6 +39,9 @@ interface DonaturDao {
 
     @Query("SELECT * from donatur")
     fun selectAllDonatur(): List<Donatur>
+
+    @Query("SELECT * from donatur where idDonatur=:userId order by uuid desc")
+    fun selectSpecifiedDonatur(userId:Int): List<Donatur>
 }
 
 @Dao

@@ -24,6 +24,7 @@ import androidx.work.workDataOf
 import com.kenny.a160420050_uts_anmp_satujiwa.R
 import com.kenny.a160420050_uts_anmp_satujiwa.databinding.FragmentDetailAksiNyataBinding
 import com.kenny.a160420050_uts_anmp_satujiwa.databinding.FragmentDetailDonasiBinding
+import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
 import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
 import com.kenny.a160420050_uts_anmp_satujiwa.util.SatuJiwaWorker
 import com.kenny.a160420050_uts_anmp_satujiwa.util.loadImage
@@ -89,9 +90,11 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
         })
     }
 
-    override fun onDonasiNominalSatuClick(v: View, donatur:Donatur) {
+    override fun onDonasiNominalSatuClick(v: View, donatur:Donatur, donasi:Donasi) {
         viewModel.update100(donasiId)
         donatur.jumlahDonasi = 100000.0
+        donatur.namaDonasi = donasi.namaDonasi
+        donatur.fotoDonasi = donasi.fotoDonasi
         viewModel.insert100(donatur)
         Toast.makeText(view?.context, "Berhasil Donasi Rp 100k", Toast.LENGTH_SHORT).show()
 
@@ -104,9 +107,11 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
         viewModel.fetch(donasiId)
     }
 
-    override fun onDonasiNominalDuaClick(v: View, donatur:Donatur) {
+    override fun onDonasiNominalDuaClick(v: View, donatur:Donatur, donasi:Donasi) {
         donatur.jumlahDonasi = 500000.0
         viewModel.update500(donasiId)
+        donatur.namaDonasi = donasi.namaDonasi
+        donatur.fotoDonasi = donasi.fotoDonasi
         viewModel.insert500(donatur)
         Toast.makeText(view?.context, "Berhasil Donasi Rp 500k", Toast.LENGTH_SHORT).show()
 
@@ -119,9 +124,11 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
         viewModel.fetch(donasiId)
     }
 
-    override fun onDonasiNominalTigaClick(v: View, donatur:Donatur) {
+    override fun onDonasiNominalTigaClick(v: View, donatur:Donatur, donasi:Donasi) {
         viewModel.update1000(donasiId)
         donatur.jumlahDonasi = 1000000.0
+        donatur.namaDonasi = donasi.namaDonasi
+        donatur.fotoDonasi = donasi.fotoDonasi
         viewModel.insert1000(donatur)
         Toast.makeText(view?.context, "Berhasil Donasi Rp 1000k", Toast.LENGTH_SHORT).show()
 

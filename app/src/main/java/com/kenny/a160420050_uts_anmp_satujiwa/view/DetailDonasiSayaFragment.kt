@@ -22,7 +22,7 @@ class DetailDonasiSayaFragment : Fragment() {
 
     private lateinit var viewModel: DetailDonasiSayaViewModel
     private var donasiSayaId : String = ""
-    private val daftarDonatur = DaftarDonaturAdapter(arrayListOf())
+//    private val daftarDonatur = DaftarDonaturAdapter(arrayListOf())
     private val daftarPenyaluranDana = DaftarPenyaluranDanaAdapter(arrayListOf())
 
     override fun onCreateView(
@@ -45,7 +45,7 @@ class DetailDonasiSayaFragment : Fragment() {
 
         val recyclerViewDetailDonatur = view.findViewById<RecyclerView>(R.id.recyclerViewDetailDonaturDonasiSaya)
         recyclerViewDetailDonatur.layoutManager = LinearLayoutManager(context)
-        recyclerViewDetailDonatur.adapter = daftarDonatur
+//        recyclerViewDetailDonatur.adapter = daftarDonatur
 
         val recylerViewDetailPenyaluranDana = view.findViewById<RecyclerView>(R.id.recylerViewDetailPenyaluranDanaDonasiSaya)
         recylerViewDetailPenyaluranDana.layoutManager = LinearLayoutManager(context)
@@ -91,9 +91,9 @@ class DetailDonasiSayaFragment : Fragment() {
         })
 
         viewModel.donaturLD.observe(viewLifecycleOwner, Observer {
-            if (it != null) {
-                daftarDonatur.updateDaftarDonatur(it)
-            }
+//            if (it != null) {
+//                daftarDonatur.updateDaftarDonatur(it)
+//            }
         })
 
         viewModel.penyaluranDanaLD.observe(viewLifecycleOwner, Observer {

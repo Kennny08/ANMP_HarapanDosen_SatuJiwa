@@ -1,6 +1,9 @@
 package com.kenny.a160420050_uts_anmp_satujiwa.view
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,13 +15,17 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kenny.a160420050_uts_anmp_satujiwa.R
+import com.kenny.a160420050_uts_anmp_satujiwa.model.Donasi
+import com.kenny.a160420050_uts_anmp_satujiwa.model.Donatur
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.DaftarDonasiSayaViewModel
 import com.kenny.a160420050_uts_anmp_satujiwa.viewmodel.ListViewModel
 
 
 class DaftarDonasiSayaFragment : Fragment() {
     private lateinit var viewModel: DaftarDonasiSayaViewModel
-    private val daftarDonasiSayaAdapter = DaftarDonasiSayaAdapter(arrayListOf())
+    private val daftarDonasiSayaAdapter = DaftarDonaturAdapter(arrayListOf())
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,9 +39,14 @@ class DaftarDonasiSayaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel = ViewModelProvider(this).get(DaftarDonasiSayaViewModel::class.java)
-        viewModel.refresh()
-        val recView = view.findViewById<RecyclerView>(R.id.recyclerViewDaftarDonasiSaya)
+        val sharedFile = "com.kenny.a160420050_uts_anmp_satujiwa"
+        val shared: SharedPreferences = requireActivity().getSharedPreferences(sharedFile, Context.MODE_PRIVATE)
+        val uuid = shared.getString("uuid", "")?.toInt()
+        if (uuid != null) {
+            viewModel.refresh(uuid)
+        }
 
+        val recView = view.findViewById<RecyclerView>(R.id.recyclerViewDaftarDonasiSaya)
         recView.layoutManager = LinearLayoutManager(context)
         recView.adapter = daftarDonasiSayaAdapter
         observeViewModel(view)
@@ -46,8 +58,9 @@ class DaftarDonasiSayaFragment : Fragment() {
         val progressBarLoadDaftarDonasiSaya = view.findViewById<ProgressBar>(R.id.progressBarLoadDaftarDonasiSaya)
         val txtErrorDaftarDonasiSaya = view.findViewById<TextView>(R.id.txtErrorDaftarDonasiSaya)
 
+
         viewModel.donasiSayaLD.observe(viewLifecycleOwner, Observer {
-            daftarDonasiSayaAdapter.updateDaftarDonasiSaya(it)
+            daftarDonasiSayaAdapter.updateDaftarDonatur(it)
         })
 
         viewModel.donasiSayaLoadErrorLD.observe(viewLifecycleOwner, Observer {
