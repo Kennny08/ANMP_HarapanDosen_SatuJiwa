@@ -59,7 +59,6 @@ class LoginActivity : AppCompatActivity(), ActivityLoginTodoInterface {
             if (it == null){
                 Toast.makeText(this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show()
                 dataBinding.user = User("", "", "", "", "")
-
             }else{
                 var sharedFile = "com.kenny.a160420050_uts_anmp_satujiwa"
                 var shared: SharedPreferences = getSharedPreferences(sharedFile, Context.MODE_PRIVATE)
