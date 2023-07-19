@@ -19,11 +19,7 @@
         android:id="@+id/itemDonasiSaya"
         android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DaftarDonasiSayaFragment"
         android:label="Donasi Saya"
-        tools:layout="@layout/fragment_daftar_donasi_saya" >
-        <action
-            android:id="@+id/actionDetailDonasiSaya"
-            app:destination="@id/detailDonasiSayaFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_daftar_donasi_saya" />
     <fragment
         android:id="@+id/itemProfile"
         android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.ProfileFragment"
@@ -50,16 +46,6 @@
         <argument
             android:name="donasiId"
             app:argType="integer" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailDonasiSayaFragment"
-        android:name="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailDonasiSayaFragment"
-        android:label="Detail Donasi Saya"
-        tools:layout="@layout/fragment_detail_donasi_saya" >
-        <argument
-            android:name="donasisayaId"
-            app:argType="string"
-            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/itemBerita"

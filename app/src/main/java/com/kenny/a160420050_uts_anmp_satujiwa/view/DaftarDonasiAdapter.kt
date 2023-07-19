@@ -33,8 +33,8 @@ class DaftarDonasiAdapter(val daftarDonasi: ArrayList<Donasi>) :
         holder.view.donasi = daftarDonasi[position]
         holder.view.donasiListener = this
 
-        val terkumpul = BigDecimal(daftarDonasi[position].donasiTerkumpul)
-        holder.itemView.findViewById<TextView>(R.id.txtDanaTerkumpul).text = "Rp "+ terkumpul.toString()
+        val terkumpul = BigDecimal(daftarDonasi[position].targetDonasi)
+        holder.itemView.findViewById<TextView>(R.id.txtDanaTerkumpul).text = "Dana dibutuhkan : Rp "+ terkumpul.toString()
 
         val progress = holder.itemView.findViewById<ProgressBar>(R.id.progressBarDonasi)
         val hasil = Math.ceil(daftarDonasi[position].donasiTerkumpul*100/daftarDonasi[position].targetDonasi)

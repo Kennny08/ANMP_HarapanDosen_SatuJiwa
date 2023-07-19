@@ -71,6 +71,9 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
                 Toast.makeText(this.context, "Konfirmasi password salah", Toast.LENGTH_SHORT).show()
             }
         }
+        else if(user.password != "" || confirmPassword != ""){
+            Toast.makeText(this.context, "Mohon lengkapi data password", Toast.LENGTH_SHORT).show()
+        }
         else{
             viewModel.update(user.phoneNumber, user.address, uuid)
             Toast.makeText(v.context, "Profile updated", Toast.LENGTH_SHORT).show()
