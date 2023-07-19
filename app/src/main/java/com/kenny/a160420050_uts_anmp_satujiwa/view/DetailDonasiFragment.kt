@@ -68,7 +68,7 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
         val formatter = SimpleDateFormat("yyyy-MM-dd")
         val current = formatter.format(time)
         if (uuid != null) {
-            dataBinding.donatur = Donatur(uuid.toInt(), donasiId, 0.0, current.toString())
+            dataBinding.donatur = Donatur(uuid.toInt(), donasiId, "","",0.0, current.toString())
         }
         observeViewModel(view)
     }

@@ -44,9 +44,26 @@ fun ImageView.loadImageDonatur(url:String?, progressBar: ProgressBar){
 val DB_NAME = "satujiwadb"
 
 fun buildDB(context: Context):SatuJiwaDatabase{
-    val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).createFromAsset("satujiwadb.db").build()
+    val db = Room.databaseBuilder(context, SatuJiwaDatabase::class.java, DB_NAME).createFromAsset("satujiwadb.db").addMigrations(
+        MIGRATION_1_2, MIGRATION_2_3).build()
 
     return db
+}
+
+val MIGRATION_1_2 = object:Migration(1,2){
+    override fun migrate(database: SupportSQLiteDatabase) {
+        database.execSQL(
+            "ALTER TABLE donatur ADD COLUMN namaDonasi TEXT DEFAULT '' not null"
+        )
+    }
+}
+
+val MIGRATION_2_3 = object:Migration(2,3){
+    override fun migrate(database: SupportSQLiteDatabase) {
+        database.execSQL(
+            "ALTER TABLE donatur ADD COLUMN fotoDonasi TEXT DEFAULT '' not null"
+        )
+    }
 }
 
 @BindingAdapter("android:imageUrl", "android:progressBar")

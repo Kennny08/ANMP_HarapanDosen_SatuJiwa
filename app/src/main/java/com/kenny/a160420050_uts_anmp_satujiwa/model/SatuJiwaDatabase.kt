@@ -5,8 +5,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.kenny.a160420050_uts_anmp_satujiwa.util.MIGRATION_1_2
+import com.kenny.a160420050_uts_anmp_satujiwa.util.MIGRATION_2_3
 
-@Database(entities= arrayOf(Donasi::class, Donatur::class, Berita::class, User::class), version=1)
+@Database(entities= arrayOf(Donasi::class, Donatur::class, Berita::class, User::class), version=3)
 abstract class SatuJiwaDatabase: RoomDatabase() {
     abstract fun donasiDao():DonasiDao
     abstract fun donaturDao():DonaturDao
@@ -21,6 +23,7 @@ abstract class SatuJiwaDatabase: RoomDatabase() {
             context.applicationContext,
             SatuJiwaDatabase::class.java, "satujiwadb")
             .createFromAsset("satujiwadb.db")
+            .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
             .build()
 
         operator fun invoke(context: Context){

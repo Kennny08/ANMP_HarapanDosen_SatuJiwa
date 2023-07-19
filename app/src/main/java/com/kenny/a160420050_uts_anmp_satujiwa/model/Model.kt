@@ -39,6 +39,10 @@ data class Donatur(
     var idDonatur:Int,
     @ColumnInfo(name="idDonasi")
     var idDonasi:Int,
+    @ColumnInfo(name="namaDonasi")
+    var namaDonasi:String,
+    @ColumnInfo(name="fotoDonasi")
+    var fotoDonasi:String,
     @ColumnInfo(name="jumlahDonasi")
     var jumlahDonasi:Double,
     @ColumnInfo(name="tanggalDonasi")
