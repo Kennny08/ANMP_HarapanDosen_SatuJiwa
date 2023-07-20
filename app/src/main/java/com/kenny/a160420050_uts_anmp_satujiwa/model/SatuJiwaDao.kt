@@ -67,6 +67,9 @@ interface UserDao {
     @Query("SELECT * from user where username=:username and password=:password")
     fun login(username:String, password:String) : User
 
+    @Query("SELECT * from user where username=:username or phoneNumber=:phoneNumber")
+    fun checkUsername(username:String, phoneNumber:String) : User
+
     @Query("SELECT * from user WHERE uuid=:id")
     fun selectAllUser(id:Int): User
 

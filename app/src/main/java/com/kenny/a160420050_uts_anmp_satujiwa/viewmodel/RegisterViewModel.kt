@@ -24,4 +24,11 @@ class RegisterViewModel(application: Application): AndroidViewModel(application)
             db.userDao().insertAll(user)
         }
     }
+
+    fun checkUsername(user:User){
+        launch {
+            val db = buildDB(getApplication())
+            userLD.postValue(db.userDao().checkUsername(user.username, user.phoneNumber))
+        }
+    }
 }
