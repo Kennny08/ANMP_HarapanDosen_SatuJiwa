@@ -13,6 +13,15 @@
         <variable
             name="detailListener"
             type="com.kenny.a160420050_uts_anmp_satujiwa.view.DetailDonasiInterface" />
+        <variable
+            name="progressBarDonasi"
+            type="Integer" />
+        <variable
+            name="donasiTerkumpul"
+            type="String" />
+        <variable
+            name="targetDonasi"
+            type="String" />
     </data>
 
     <FrameLayout
@@ -63,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-
+                    android:text="@{donasiTerkumpul}"
                     android:textColor="#de0e00"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -79,7 +88,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="20dp"
                     android:max="100"
-
+                    android:progress="@{progressBarDonasi}"
                     android:progressBackgroundTint="#EBEBEC"
                     android:progressDrawable="@drawable/rounded_progressbar"
                     android:progressTint="#de0e00"
@@ -95,7 +104,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="80dp"
-
+                    android:text="@{targetDonasi}"
                     android:textColor="#000000"
                     app:layout_constraintEnd_toStartOf="@+id/txtDetailTargetTanggal"
                     app:layout_constraintHorizontal_bias="0.0"

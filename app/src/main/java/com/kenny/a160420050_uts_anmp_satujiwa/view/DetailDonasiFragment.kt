@@ -71,22 +71,23 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
         if (uuid != null) {
             dataBinding.donatur = Donatur(uuid.toInt(), donasiId, "","",0.0, current.toString())
         }
-        observeViewModel(view)
+        observeViewModel()
     }
 
 
-    fun observeViewModel(view: View){
+    fun observeViewModel(){
         viewModel.donasisLD.observe(viewLifecycleOwner, Observer {
             dataBinding.donasi = it
+
             val target = BigDecimal(it.targetDonasi)
-            view.findViewById<TextView>(R.id.txtDetailTargetDonasi).text = "Terkumpul dari Rp "+ target.toString()
+            dataBinding.targetDonasi = "Terkumpul dari Rp "+ target.toString()
 
             val terkumpul = BigDecimal(it.donasiTerkumpul)
-            view.findViewById<TextView>(R.id.txtDetailProgressDonasi).text = "Rp "+ terkumpul.toString()
+            dataBinding.donasiTerkumpul = "Rp "+ terkumpul.toString()
 
-            val progress = view.findViewById<ProgressBar>(R.id.progressBarDetailDonasi)
             val hasil = Math.ceil(it.donasiTerkumpul*100/it.targetDonasi)
-            progress.setProgress(hasil.toInt())
+            dataBinding.progressBarDonasi = hasil.toInt()
+            viewModel.fetch(donasiId)
         })
     }
 
@@ -104,7 +105,6 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
             .build()
 
         WorkManager.getInstance(requireContext()).enqueue(myWorkRequest)
-        viewModel.fetch(donasiId)
     }
 
     override fun onDonasiNominalDuaClick(v: View, donatur:Donatur, donasi:Donasi) {
@@ -121,7 +121,6 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
             .build()
 
         WorkManager.getInstance(requireContext()).enqueue(myWorkRequest)
-        viewModel.fetch(donasiId)
     }
 
     override fun onDonasiNominalTigaClick(v: View, donatur:Donatur, donasi:Donasi) {
@@ -138,6 +137,5 @@ class DetailDonasiFragment : Fragment(), DetailDonasiInterface {
             .build()
 
         WorkManager.getInstance(requireContext()).enqueue(myWorkRequest)
-        viewModel.fetch(donasiId)
     }
 }
