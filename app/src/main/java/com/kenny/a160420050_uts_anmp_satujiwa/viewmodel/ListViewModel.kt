@@ -17,8 +17,6 @@ class ListViewModel(application: Application) : AndroidViewModel(application), C
     val donasiLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 
-    val TAG = "volleyTag"
-
     private var job = Job()
 
     override val coroutineContext:CoroutineContext

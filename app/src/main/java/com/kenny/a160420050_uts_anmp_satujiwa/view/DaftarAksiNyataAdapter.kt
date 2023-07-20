@@ -24,7 +24,6 @@ class DaftarAksiNyataAdapter (val daftarAksiNyata: ArrayList<Donasi>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AksiNyataViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-//        val view = inflater.inflate(R.layout.daftar_aksinyata_item, parent, false)
         val view = DataBindingUtil.inflate<DaftarAksinyataItemBinding>(inflater, R.layout.daftar_aksinyata_item, parent, false)
         return AksiNyataViewHolder(view)
     }

@@ -31,9 +31,6 @@ class DaftarDonaturAdapter(val daftarDonatur: ArrayList<Donatur>) :
 
     override fun onBindViewHolder(holder: DonaturViewHolder, position: Int) {
         holder.view.donatur = daftarDonatur[position]
-
-
-
     }
 
     override fun getItemCount(): Int {

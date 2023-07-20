@@ -39,7 +39,6 @@ class DaftarBeritaFragment : Fragment() {
         val recView = view.findViewById<RecyclerView>(R.id.recyclerViewBerita)
         recView.layoutManager = LinearLayoutManager(context)
         recView.adapter = daftarBeritaAdapter
-        Log.d("adapterfragment", "masuk")
 
         val swipe = view.findViewById<SwipeRefreshLayout>(R.id.refreshLayoutDaftarBerita)
         swipe.setOnRefreshListener {
@@ -62,7 +61,6 @@ class DaftarBeritaFragment : Fragment() {
         val txtErrorLoadDaftarBerita = view.findViewById<TextView>(R.id.txtErrorLoadDaftarBerita)
 
         viewModel.beritaLD.observe(viewLifecycleOwner, Observer {
-            Log.d("adapterfragment", it.toString())
             daftarBeritaAdapter.updateDaftarBerita(it)
         })
 

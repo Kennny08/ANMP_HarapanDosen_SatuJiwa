@@ -30,19 +30,6 @@ class DaftarBeritaAdapter(val daftarBerita: ArrayList<Berita>) :
     override fun onBindViewHolder(holder: BeritaViewHolder, position: Int) {
         holder.view.berita = daftarBerita[position]
         holder.view.clickListener = this
-        Log.d("adapter", "Masuk Adapter")
-//        val imgBerita = holder.view.findViewById<ImageView>(R.id.imgBerita)
-//        val txtJudulBerita = holder.view.findViewById<TextView>(R.id.txtJudulBerita)
-//        val txtNamaPenulisBerita = holder.view.findViewById<TextView>(R.id.txtNamaPenulisBerita)
-//        val txtTanggalBerita = holder.view.findViewById<TextView>(R.id.txtTanggalBerita)
-//        val btnBacaBerita = holder.view.findViewById<Button>(R.id.btnBacaBerita)
-//        val progressBarImageBerita = holder.view.findViewById<ProgressBar>(R.id.progressBarImageBerita)
-//
-//
-//        imgBerita.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/" + daftarBerita[position].gambarBerita, progressBarImageBerita)
-//        txtJudulBerita.text = daftarBerita[position].judulBerita
-//        txtTanggalBerita.text = daftarBerita[position].tanggalBerita
-//        txtNamaPenulisBerita.text = daftarBerita[position].namaPenulis
     }
 
     override fun getItemCount(): Int {

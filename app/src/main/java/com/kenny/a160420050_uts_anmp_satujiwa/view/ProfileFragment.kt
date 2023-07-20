@@ -53,20 +53,6 @@ class ProfileFragment : Fragment(), ProfileInterface {
         val imgProfilePengguna = view.findViewById<ImageView>(R.id.imgProfilePengguna)
         val progressBarImagePenggunaProfile = view.findViewById<ProgressBar>(R.id.progressBarImagePenggunaProfile)
         imgProfilePengguna.loadImage("https://projectfspf.000webhostapp.com/projectutsanmp/images/logosatujiwa.png", progressBarImagePenggunaProfile)
-
-//        btnEditProfile.setOnClickListener{
-//            val action = ProfileFragmentDirections.actionProfileEditProfile()
-//            Navigation.findNavController(it).navigate(action)
-//        }
-//        btnProfileAboutSatuJiwa.setOnClickListener{
-//            val action = ProfileFragmentDirections.actionProfileAbout()
-//            Navigation.findNavController(it).navigate(action)
-//        }
-//
-//        btnDaftarDonasiSaya.setOnClickListener{
-//            val action = ProfileFragmentDirections.actionDaftarDonasiSaya()
-//            Navigation.findNavController(it).navigate(action)
-//        }
     }
 
     override fun onEditProfileClick(v: View) {

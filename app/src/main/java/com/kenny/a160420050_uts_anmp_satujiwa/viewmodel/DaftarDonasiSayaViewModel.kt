@@ -21,7 +21,6 @@ import kotlin.coroutines.CoroutineContext
 
 class DaftarDonasiSayaViewModel(application: Application) : AndroidViewModel(application), CoroutineScope {
     val donasiSayaLD = MutableLiveData<List<Donatur>>()
-    val donasiLD = MutableLiveData<Donasi>()
     val donasiSayaLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
 

@@ -30,7 +30,6 @@ class EditProfileFragment : Fragment() , ProfileEditInterface{
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_edit_profile, container, false)
         dataBinding = DataBindingUtil.inflate<FragmentEditProfileBinding>(
             inflater, R.layout.fragment_edit_profile, container, false)
         return dataBinding.root

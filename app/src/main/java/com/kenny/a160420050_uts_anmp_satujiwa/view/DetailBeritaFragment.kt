@@ -41,10 +41,10 @@ class DetailBeritaFragment : Fragment() {
                 DetailBeritaFragmentArgs.fromBundle(requireArguments()).beritaId
             viewModel.fetch(beritaId)
         }
-        observeViewModel(view)
+        observeViewModel()
     }
 
-    fun observeViewModel(view: View) {
+    fun observeViewModel() {
         viewModel.beritaLD.observe(viewLifecycleOwner, Observer {
             dataBinding.berita = it
         })
